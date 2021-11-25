@@ -7,26 +7,11 @@
 
 import SwiftUI
 
-struct Test<Content: View> : UIViewRepresentable {
+struct Test : View {
 
-    
-    
-    var content: Content
-    @Binding var offset: CGFloat
-    
-    init(offset: CGFloat, @ViewBuilder content: @escaping ()->Content) {
-        self.content = content()
-        self._offset = offset
-    }
-    
-    func makeUIView(context: Context) -> UIScrollView {
-        let scrollview = UIScrollView()
-        return scrollview
-
-    }
-
-    func updateUIView(_ uiView: UIScrollView, context: Context) {
-
+    var body: some View {
+        Home()
+            .preferredColorScheme(.dark)
     }
 }
 
