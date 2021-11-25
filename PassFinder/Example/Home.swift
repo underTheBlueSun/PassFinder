@@ -27,26 +27,26 @@ struct Home: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             
-//            OffsetPageTabView(offset: $offset) {
-//                
-//                HStack(spacing: 0) {
-//                    
-//                    ForEach(intros) { intro in
-//                        
-//                        VStack {
-//                            
-//                            Image(intro.image)
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-////                                .frame(height: size.height / 3)
-//                        }
-//                        .padding()
-//                        
-//                    }
-//                    
-//                }
-//
-//            }
+            OffsetPageTabView(offset: $offset) {
+                
+                HStack(spacing: 0) {
+                    
+                    ForEach(intros) { intro in
+                        
+                        VStack {
+                            
+                            Image(intro.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+//                                .frame(height: size.height / 3)
+                        }
+                        .padding()
+                        
+                    }
+                    
+                }
+
+            }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
