@@ -12,8 +12,11 @@ struct OffsetPageTabView<Content: View> : UIViewRepresentable {
     var content: Content
     @Binding var offset: CGFloat
     
+    func makeCoordinator() -> Coordinator {
+        return OffsetPageTabView.Coordinator(parent: self)
+    }
+    
     init(offset: Binding<CGFloat>, @ViewBuilder content: @escaping () -> Content) {
-//    init(offset: CGFloat, @ViewBuilder content: @escaping ()->Content) {
         self.content = content()
         self._offset = offset
     }
@@ -39,11 +42,31 @@ struct OffsetPageTabView<Content: View> : UIViewRepresentable {
         scrollview.isPagingEnabled = true
         scrollview.showsVerticalScrollIndicator = false
         scrollview.showsHorizontalScrollIndicator = false
+        
+        // setting Delegate...
+        scrollview.delegate = context.coordinator
 
         return scrollview
     }
     
     func updateUIView(_ uiView: UIScrollView, context: Context) {
+        
+    }
+    
+    // Pager offset...
+    class Coordinator: NSObject, UIScrollViewDelegate {
+        
+        var parent: OffsetPageTabView
+        
+        init(parent: OffsetPageTabView) {
+            self.parent = parent
+        }
+        
+        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            
+            let offset = scrollView.contentOffset.x
+            parent.offset = offset
+        }
         
     }
 }

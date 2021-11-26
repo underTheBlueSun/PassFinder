@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     
+    var screenSize: CGSize
+    
     @State var offset: CGFloat = 0
     
     var body: some View {
@@ -38,20 +40,58 @@ struct Home: View {
                             Image(intro.image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-//                                .frame(height: size.height / 3)
+                                .frame(height: screenSize.height / 3)
+                            
+                            VStack(alignment: .leading, spacing: 22) {
+                                Text(intro.title)
+                                    .font(.largeTitle.bold())
+                                Text(intro.description)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.secondary)
+                            }
+                            .foregroundStyle(.white)
+                            .padding(.top, 20)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         .padding()
-                        
-                    }
+                        // setting max width...
+                        .frame(width: screenSize.width)
+                    } // ForEach
                     
-                }
+                } // HStack
 
+            } // OffsetPageTabView
+            
+            // Animated Indicator...
+            HStack(alignment: .bottom) {
+                
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "chevron.right")
+                        .font(.title2.bold())
+                        .foregroundColor(.white)
+                        .padding(20)
+                        .background(
+                            intros[getIndex()].color,
+                            in: Circle()
+                        )
+                }
             }
             
-        }
+        } // VStack
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         
+    }
+    
+    // Expading index based on offset...
+    func getIndex()->Int {
         
+        let prograss = round(offset / screenSize.width)
+        
+        return Int(prograss)
     }
 }
 

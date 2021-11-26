@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Home()
-            .preferredColorScheme(.dark)
+        
+        // Gatting ScreenSize Globally...
+        GeometryReader { proxy in
+            
+            let size = proxy.size
+            
+            Home(screenSize: size)
+                .preferredColorScheme(.dark)
+            
+        }
+        
     }
 }
 

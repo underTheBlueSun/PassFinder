@@ -14,7 +14,6 @@
 		FAB19370274F01A300B10E3F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1936F274F01A300B10E3F /* Home.swift */; };
 		FAB19372274F01C100B10E3F /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19371274F01C100B10E3F /* Intro.swift */; };
 		FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */; };
-		FAB19376274F73D200B10E3F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19375274F73D200B10E3F /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		FAB1936F274F01A300B10E3F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FAB19371274F01C100B10E3F /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
-		FAB19375274F73D200B10E3F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				FAB1936F274F01A300B10E3F /* Home.swift */,
 				FAB19371274F01C100B10E3F /* Intro.swift */,
 				FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */,
-				FAB19375274F73D200B10E3F /* Test.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 				FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */,
 				FAB19372274F01C100B10E3F /* Intro.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
-				FAB19376274F73D200B10E3F /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
