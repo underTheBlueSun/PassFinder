@@ -13,6 +13,8 @@ struct Home: View {
     
     @State var offset: CGFloat = 0
     
+    @State private var sometoggle = true
+    
     var body: some View {
         
         VStack {
@@ -36,7 +38,9 @@ struct Home: View {
                     ForEach(intros) { intro in
                         
                         VStack {
-                            
+                            Toggle(isOn: $sometoggle) {
+                                Text("확인")
+                            }
                             Image(intro.image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
