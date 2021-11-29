@@ -27,7 +27,7 @@ struct PlayerView: View {
                             MultiSelectRow(title: number1, isSelected: self.selections.contains(number1)) {
                             // 이미 체크된거 클릭할때
                             if self.selections.contains(number1) {
-                                self.selections.removeAll(where: { $0 == number1 })
+//                                self.selections.removeAll(where: { $0 == number1 })
 //                                self.isSelected1 = true
 //                                self.isSelected2 = false
                             }
@@ -45,7 +45,7 @@ struct PlayerView: View {
                             MultiSelectRow(title: number2, isSelected: self.selections.contains(number2)) {
                             // 이미 체크된거 클릭할때
                             if self.selections.contains(number2) {
-                                self.selections.removeAll(where: { $0 == number2 })
+//                                self.selections.removeAll(where: { $0 == number2 })
 //                                self.isSelected1 = false
 //                                self.isSelected2 = true
                             }
