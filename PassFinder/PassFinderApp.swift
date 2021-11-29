@@ -11,7 +11,8 @@ import SwiftUI
 struct PassFinderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            Test2()
         }
     }
 }

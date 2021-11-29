@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct Test: View {
-    
-    @State private var sometoggle1 = true
-    
-    var body: some View {
-        
-        VStack {
-            Toggle(isOn: $sometoggle1) {
-                Text("확인")
+    @State private var favoriteColor = 0
+
+        var body: some View {
+            Picker(selection: $favoriteColor.onChange(colorChange), label: Text("Color")) {
+                Text("Red").tag(0)
+                Text("Green").tag(1)
+                Text("Blue").tag(2)
             }
-            
-            Toggle(isOn: $sometoggle1) {
-                Text("확인")
-            }
-            
         }
-        
+
+        func colorChange(_ tag: Int) {
+            print("Color tag: \(tag)")
+        }
+}
+
+extension Binding {
+    func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
+        return Binding(
+            get: { self.wrappedValue },
+            set: { selection in
+                self.wrappedValue = selection
+                handler(selection)
+        })
     }
 }
 
@@ -34,19 +41,5 @@ struct Test_Previews: PreviewProvider {
 }
 
 
-//let arr = ["FOO", "FOO", "BAR", "FOOBAR"]
-//var counts: [String: Int] = [:]
-//
-//for item in arr {
-//    counts[item] = (counts[item] ?? 0) + 1
-//}
-//
-//print(counts)  // "[BAR: 1, FOOBAR: 1, FOO: 2]"
-//
-//for (key, value) in counts {
-//    print("\(key) occurs \(value) time(s)")
-//}
-//
-//BAR occurs 1 time(s)
-//FOOBAR occurs 1 time(s)
-//FOO occurs 2 time(s)
+//배열에서 요소(element)별로 카운트
+//https://stackoverflow.com/questions/30545518/how-to-count-occurrences-of-an-element-in-a-swift-array
