@@ -16,8 +16,11 @@ import SwiftUI
 
 struct PlayerButton1: View {
     var title: String
-    @Binding var isSelected1: Bool
-    @Binding var isSelected2: Bool
+//    @Binding var isSelected1: Bool
+//    @Binding var isSelected2: Bool
+    
+     var isSelected1: Bool
+     var isSelected2: Bool
     var action: () -> Void
 
     var body: some View {
