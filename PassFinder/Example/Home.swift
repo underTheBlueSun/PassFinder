@@ -12,8 +12,8 @@ struct Home: View {
     var screenSize: CGSize
     
     @State var offset: CGFloat = 0
-    
-    @State private var sometoggle = true
+    @State var selections: [String] = []
+    @State var isSelected: Bool
     
     var body: some View {
         
@@ -31,6 +31,7 @@ struct Home: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             
+            
             OffsetPageTabView(offset: $offset) {
                 
                 HStack(spacing: 0) {
@@ -38,9 +39,7 @@ struct Home: View {
                     ForEach(intros) { intro in
                         
                         VStack {
-                            Toggle(isOn: $sometoggle) {
-                                Text("확인")
-                            }
+                            
                             Image(intro.image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
