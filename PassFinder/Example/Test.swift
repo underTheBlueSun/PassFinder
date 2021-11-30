@@ -6,32 +6,71 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct Test: View {
-    @State private var favoriteColor = 0
+    
+    
+    let arr = ["E1", "E2", "I3", "E4"]
+    @State var counts: [String: Int] = [:]
+
+    
 
         var body: some View {
-            Picker(selection: $favoriteColor.onChange(colorChange), label: Text("Color")) {
-                Text("Red").tag(0)
-                Text("Green").tag(1)
-                Text("Blue").tag(2)
+            
+            Button {
+                
+                
+                for item in arr {
+                    // 처음부터 0번째 까지 자르기일 경우
+                    let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
+                    let result = String(item[...endIdx])
+                    // dictionary = key:value
+                    counts[result] = (counts[result] ?? 0) + 1
+                }
+                
+                print(counts)  // "["E": 3, "I": 1]"
+                
+                    var eCnt: Int = 0
+                    var iCnt: Int = 0
+                    var sCnt: Int = 0
+                    var nCnt: Int = 0
+                    var tCnt: Int = 0
+                    var fCnt: Int = 0
+                    var jCnt: Int = 0
+                    var pCnt: Int = 0
+                
+                for (key, value) in counts {
+                    if key == "E" {
+                        eCnt = value
+                    } else if key == "I" {
+                        iCnt = value
+                    } else if key == "S" {
+                        sCnt = value
+                    } else if key == "N" {
+                        nCnt = value
+                    }else if key == "T" {
+                        tCnt = value
+                    }else if key == "F" {
+                        fCnt = value
+                    }else if key == "J" {
+                        jCnt = value
+                    }else if key == "P" {
+                        pCnt = value
+                    }
+
+                }
+                print(eCnt)
+                print(iCnt)
+                print(sCnt)
+                
+            } label: {
+                Text("버튼")
             }
-        }
+            
 
-        func colorChange(_ tag: Int) {
-            print("Color tag: \(tag)")
+            
         }
-}
-
-extension Binding {
-    func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
-        return Binding(
-            get: { self.wrappedValue },
-            set: { selection in
-                self.wrappedValue = selection
-                handler(selection)
-        })
-    }
 }
 
 struct Test_Previews: PreviewProvider {
@@ -40,6 +79,3 @@ struct Test_Previews: PreviewProvider {
     }
 }
 
-
-//배열에서 요소(element)별로 카운트
-//https://stackoverflow.com/questions/30545518/how-to-count-occurrences-of-an-element-in-a-swift-array
