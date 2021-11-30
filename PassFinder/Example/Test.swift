@@ -25,7 +25,7 @@ struct Test: View {
                     // 처음부터 0번째 까지 자르기일 경우
                     let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
                     let result = String(item[...endIdx])
-                    // dictionary = key:value
+                    // dictionary = key:valuefdsfdsfdsfsdfsdfsdfsd
                     counts[result] = (counts[result] ?? 0) + 1
                 }
                 

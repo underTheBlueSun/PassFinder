@@ -20,34 +20,36 @@ struct ItemView: View {
                     HStack {
                         
                         MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
-                            // 이미 체크된거 클릭할때
+                            
                             if self.selections.contains(item.type1) {
+//                                print(selections)
                             }
-                            // 체크 안된거 클릭할때
+                            
                             else {
                                 self.selections.append(item.type1)
                                 self.selections.removeAll(where: { $0 == item.type2 })
+//                                print(selections)
                             }
                         }
                         
                         MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
-                            // 이미 체크된거 클릭할때
+                            
                             if self.selections.contains(item.type2) {
+//                                print(selections)
                             }
-                            // 체크 안된거 클릭할때
+                            
                             else {
                                 self.selections.append(item.type2)
                                 self.selections.removeAll(where: { $0 == item.type1 })
+//                                print(selections)
                             }
                         }
                         
-                        
                     }
 
-                    
                 }
                 
-            }
+            } // ForEach
             
         }
         
