@@ -18,6 +18,7 @@ struct ContentView: View {
             
             Home(screenSize: size, isSelected: false)
 //                .preferredColorScheme(.dark)
+
             
         }
         

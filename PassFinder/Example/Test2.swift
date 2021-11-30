@@ -26,21 +26,32 @@ struct Test2: View {
 //
 //            }
             
-            ZStack {
+            VStack {
+//                Color.pink.ignoresSafeArea()
                 
-                Rectangle()
-                    .fill(Color.gray).opacity(0.3)
-                    .frame(width: 330, height: 200)
-                    .cornerRadius(15)
-                
-                Button(action: {
-//                    curriculumViewModel.deleteData()
-                }, label: {
-                     Text("완전삭제")
-                })
-                
+                ZStack {
+                    
+                    
+                    Rectangle()
+                        .fill(Color.gray).opacity(0.3)
+                        .frame(width: 330, height: 200)
+                        .cornerRadius(15)
+                    
+                    Button(action: {
+    //                    curriculumViewModel.deleteData()
+                    }, label: {
+                         Text("완전삭제")
+                    })
+                    
+                    
+                }
                 
             }
+            .background(.red)
+            .ignoresSafeArea()
+            
+            
+            
             
                 
             

@@ -12,56 +12,64 @@ struct ItemView: View {
     
     var body: some View {
         
-        ScrollView {
-            
-            ForEach(items) { item in
+        VStack {
+//            Color.pink.ignoresSafeArea()
+            ScrollView {
                 
-                ZStack {
+                ForEach(items) { item in
                     
-                    Rectangle()
-                        .fill(Color.gray).opacity(0.3)
-                        .frame(width: 330, height: 100)
-                        .cornerRadius(15)
-                    
-                    VStack(alignment:.leading) {
+                    ZStack {
                         
-                        MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
+                        Rectangle()
+                            .fill(Color.gray).opacity(0.2)
+                            .frame(width: 330, height: 100)
+                            .cornerRadius(15)
+                        
+                        VStack(alignment:.leading) {
                             
-                            if self.selections.contains(item.type1) {
-    //                                print(selections)
+                            MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
+                                
+                                if self.selections.contains(item.type1) {
+        //                                print(selections)
+                                }
+                                
+                                else {
+                                    self.selections.append(item.type1)
+                                    self.selections.removeAll(where: { $0 == item.type2 })
+        //                                print(selections)
+                                }
                             }
                             
-                            else {
-                                self.selections.append(item.type1)
-                                self.selections.removeAll(where: { $0 == item.type2 })
-    //                                print(selections)
-                            }
-                        }
-                        
-                        Divider()
-                            .frame(width:300)
-                        
-                        MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
+                            Divider()
+                                .frame(width:300)
                             
-                            if self.selections.contains(item.type2) {
-    //                                print(selections)
+                            MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
+                                
+                                if self.selections.contains(item.type2) {
+        //                                print(selections)
+                                }
+                                
+                                else {
+                                    self.selections.append(item.type2)
+                                    self.selections.removeAll(where: { $0 == item.type1 })
+        //                                print(selections)
+                                }
                             }
                             
-                            else {
-                                self.selections.append(item.type2)
-                                self.selections.removeAll(where: { $0 == item.type1 })
-    //                                print(selections)
-                            }
-                        }
+                        } // VStack
                         
-                    } // VStack
+                        
+                    }
                     
-                    
-                }
+                } // ForEach
                 
-            } // ForEach
+            } // ScrollView
             
         }
+        .background(.red)
+        .ignoresSafeArea()
+        
+        
         
     }
 }
