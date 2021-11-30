@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		156D58C92752254D003F3A9C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58C82752254D003F3A9C /* Test.swift */; };
+		156D58C92752254D003F3A9C /* arrCnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58C82752254D003F3A9C /* arrCnt.swift */; };
 		156D58CB2754EB91003F3A9C /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58CA2754EB91003F3A9C /* Test2.swift */; };
-		156D58CD275500CF003F3A9C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58CC275500CF003F3A9C /* PlayerView.swift */; };
-		156D58CF27550489003F3A9C /* PlayerButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58CE27550489003F3A9C /* PlayerButton1.swift */; };
-		156D58D12755067F003F3A9C /* PlayerButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D02755067F003F3A9C /* PlayerButton2.swift */; };
 		156D58D3275587CE003F3A9C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D2275587CE003F3A9C /* Item.swift */; };
 		156D58D527558A5A003F3A9C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D427558A5A003F3A9C /* ItemView.swift */; };
 		FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19360274F017800B10E3F /* PassFinderApp.swift */; };
@@ -22,16 +19,11 @@
 		FAB19372274F01C100B10E3F /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19371274F01C100B10E3F /* Intro.swift */; };
 		FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */; };
 		FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19377275465B400B10E3F /* MultiSelectRow.swift */; };
-		FAB1937A27548DA600B10E3F /* MultipleSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1937927548DA600B10E3F /* MultipleSelectionList.swift */; };
-		FAB1937C27548EB900B10E3F /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1937B27548EB900B10E3F /* MultipleSelectionRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		156D58C82752254D003F3A9C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		156D58C82752254D003F3A9C /* arrCnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrCnt.swift; sourceTree = "<group>"; };
 		156D58CA2754EB91003F3A9C /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
-		156D58CC275500CF003F3A9C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		156D58CE27550489003F3A9C /* PlayerButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButton1.swift; sourceTree = "<group>"; };
-		156D58D02755067F003F3A9C /* PlayerButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButton2.swift; sourceTree = "<group>"; };
 		156D58D2275587CE003F3A9C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		156D58D427558A5A003F3A9C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		FAB1935D274F017800B10E3F /* PassFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +35,6 @@
 		FAB19371274F01C100B10E3F /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		FAB19377275465B400B10E3F /* MultiSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectRow.swift; sourceTree = "<group>"; };
-		FAB1937927548DA600B10E3F /* MultipleSelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionList.swift; sourceTree = "<group>"; };
-		FAB1937B27548EB900B10E3F /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +93,8 @@
 				FAB19371274F01C100B10E3F /* Intro.swift */,
 				FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */,
 				FAB19377275465B400B10E3F /* MultiSelectRow.swift */,
-				FAB1937927548DA600B10E3F /* MultipleSelectionList.swift */,
-				FAB1937B27548EB900B10E3F /* MultipleSelectionRow.swift */,
-				156D58C82752254D003F3A9C /* Test.swift */,
+				156D58C82752254D003F3A9C /* arrCnt.swift */,
 				156D58CA2754EB91003F3A9C /* Test2.swift */,
-				156D58CC275500CF003F3A9C /* PlayerView.swift */,
-				156D58CE27550489003F3A9C /* PlayerButton1.swift */,
-				156D58D02755067F003F3A9C /* PlayerButton2.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -185,20 +170,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19363274F017800B10E3F /* ContentView.swift in Sources */,
-				FAB1937C27548EB900B10E3F /* MultipleSelectionRow.swift in Sources */,
 				FAB19370274F01A300B10E3F /* Home.swift in Sources */,
 				156D58D527558A5A003F3A9C /* ItemView.swift in Sources */,
-				156D58CD275500CF003F3A9C /* PlayerView.swift in Sources */,
 				FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */,
 				156D58CB2754EB91003F3A9C /* Test2.swift in Sources */,
 				FAB19372274F01C100B10E3F /* Intro.swift in Sources */,
-				FAB1937A27548DA600B10E3F /* MultipleSelectionList.swift in Sources */,
-				156D58D12755067F003F3A9C /* PlayerButton2.swift in Sources */,
 				FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */,
-				156D58CF27550489003F3A9C /* PlayerButton1.swift in Sources */,
 				156D58D3275587CE003F3A9C /* Item.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
-				156D58C92752254D003F3A9C /* Test.swift in Sources */,
+				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

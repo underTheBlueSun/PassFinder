@@ -8,22 +8,52 @@
 import SwiftUI
 
 struct Test2: View {
-    @State var isToggleOn: Bool = true
+//    @State var isToggleOn: Bool = true
 
         var body: some View {
 
-            VStack {
-
-                // isToggleOn을 Binding<Bool> 형태로 리턴하기위에
-                // $를 붙여 초기화합니다.
-                ChildView(isToggleOn: $isToggleOn)
+//            Form {
+//                Section(header: Text("").font(.system(size: 20))) {
+//                    Text("여러 친구들과 두루두루 친하다").font(.system(size: 16))
+//                    Text("몇 명의 친구들과 깊게 친하다").font(.system(size: 16))
+//                }
+//
+//                Section(header: Text("").font(.system(size: 20))) {
+//                    Text("여러 친구들과 두루두루 친하다").font(.system(size: 16))
+//                    Text("몇 명의 친구들과 깊게 친하다").font(.system(size: 16))
+//                }
+//
+//
+//            }
+            
+            ZStack {
                 
-                if isToggleOn {
-                    Text("그으으을자!")
-                }
-
+                Rectangle()
+                    .fill(Color.gray).opacity(0.3)
+                    .frame(width: 330, height: 200)
+                    .cornerRadius(15)
+                
+                Button(action: {
+//                    curriculumViewModel.deleteData()
+                }, label: {
+                     Text("완전삭제")
+                })
+                
+                
             }
+            
+                
+            
         }
+    
+//    Rectangle()
+////        .fill(self.colorScheme == .dark ? self.darkModeStyle.backgroundColor : self.style.backgroundColor)
+//        .cornerRadius(20)
+//        .shadow(color: self.style.dropShadowColor, radius: self.dropShadow ? 8 : 0)
+    
+
+    
+    
     }
 
 struct Test2_Previews: PreviewProvider {
@@ -32,17 +62,3 @@ struct Test2_Previews: PreviewProvider {
     }
 }
 
-struct ChildView :View{
-
-    
-    //Binding Annoation을 붙이면 Binding<Bool>을 인자로받아 초기화 시킬 수 있습니다.
-    @Binding var isToggleOn:Bool
-
-    var body: some View{
-
-        //$가 붙으면 값을 수정가능한 Binding타입 참조합니다.
-        Toggle(isOn: $isToggleOn) {
-            Text("글자를 가립니다")
-        }.padding()
-    }
-}

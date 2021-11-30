@@ -15,38 +15,48 @@ struct ItemView: View {
         ScrollView {
             
             ForEach(items) { item in
-                VStack {
-
-                    HStack {
+                
+                ZStack {
+                    
+                    Rectangle()
+                        .fill(Color.gray).opacity(0.3)
+                        .frame(width: 330, height: 100)
+                        .cornerRadius(15)
+                    
+                    VStack(alignment:.leading) {
                         
                         MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
                             
                             if self.selections.contains(item.type1) {
-//                                print(selections)
+    //                                print(selections)
                             }
                             
                             else {
                                 self.selections.append(item.type1)
                                 self.selections.removeAll(where: { $0 == item.type2 })
-//                                print(selections)
+    //                                print(selections)
                             }
                         }
+                        
+                        Divider()
+                            .frame(width:300)
                         
                         MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
                             
                             if self.selections.contains(item.type2) {
-//                                print(selections)
+    //                                print(selections)
                             }
                             
                             else {
                                 self.selections.append(item.type2)
                                 self.selections.removeAll(where: { $0 == item.type1 })
-//                                print(selections)
+    //                                print(selections)
                             }
                         }
                         
-                    }
-
+                    } // VStack
+                    
+                    
                 }
                 
             } // ForEach
