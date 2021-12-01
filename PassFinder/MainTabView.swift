@@ -24,7 +24,6 @@ struct MainTabView: View {
 
     @State private var selectedTab: Tabs = .item
     
-    
   var body: some View {
     
     TabView(selection: $selectedTab) {
@@ -50,7 +49,7 @@ private extension MainTabView {
         ItemView()
             .tag(Tabs.item)
             .tabItem {
-              Image(systemName: "checkmark.circle.fill")
+              Image(systemName: "checkmark")
 //              Text("검사")
              }
     }
