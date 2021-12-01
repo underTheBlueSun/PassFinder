@@ -21,13 +21,13 @@ struct MultiSelectRow: View {
                     
                     ZStack {
                         Circle()
-                            .stroke(self.isSelected ? Color.green : Color.gray,lineWidth: 2)
+                            .stroke(self.isSelected ? Color.systemTeal : Color.gray,lineWidth: 2)
                             .frame(width: 17, height: 17)
                         
                         if self.isSelected {
                             
                             Image(systemName: "checkmark.circle.fill")
-                                .foregroundColor(Color.green)
+                                .foregroundColor(Color.systemTeal)
                                 .frame(width: 17, height: 17)
                             
                         }
@@ -37,11 +37,12 @@ struct MultiSelectRow: View {
                     
                         
                     Text(title)
-                        .foregroundColor(self.isSelected ? Color.red : Color.black)
+                        .foregroundColor(self.isSelected ? Color.black : Color.gray)
                         .fontWeight(.bold)
     //                    .font(.title)
     //                    .foregroundColor(.purple)
                         .padding(.vertical, 5)
+                        .frame(alignment: .leading)
     //                    .border(Color.purple, width: 5)
                     
                     

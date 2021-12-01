@@ -12,10 +12,23 @@ struct Test3: View {
         
         VStack {
             
-            Color.pink.ignoresSafeArea()
+            Text("dsdfsdsds\nfdsdfds")
+                .frame(width: 270, height: 100)
+                .foregroundColor(.blue)
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.yellow, lineWidth: 10))
+                .navigationTitle("SwiftUI")
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarLeading) {
+                                Button("Press Me") {
+                                    print("Pressed")
+                                }
+                            }
+                        }
             
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
         }
+        
         
     }
 }

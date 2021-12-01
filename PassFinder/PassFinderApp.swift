@@ -12,7 +12,7 @@ struct PassFinderApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            ItemView()
+            MainTabView()
         }
     }
 }

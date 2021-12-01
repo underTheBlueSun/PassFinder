@@ -12,16 +12,20 @@ struct ItemView: View {
     
     var body: some View {
         
-        VStack {
-//            Color.pink.ignoresSafeArea()
+        NavigationView {
             ScrollView {
                 
                 ForEach(items) { item in
                     
                     ZStack {
                         
+    //                    Text("")
+    //                        .frame(width: 290, height: 100)
+    //                        .foregroundColor(.blue)
+    //                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.yellow, lineWidth: 3))
+                        
                         Rectangle()
-                            .fill(Color.gray).opacity(0.2)
+                            .fill(Color.gray).opacity(0.1)
                             .frame(width: 330, height: 100)
                             .cornerRadius(15)
                         
@@ -42,6 +46,7 @@ struct ItemView: View {
                             
                             Divider()
                                 .frame(width:300)
+    //                            .background(.black)
                             
                             MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
                                 
@@ -64,10 +69,22 @@ struct ItemView: View {
                 } // ForEach
                 
             } // ScrollView
+//            .navigationTitle("SwiftUI")
+            .navigationBarTitle("나의 에너지 방향은", displayMode: .inline)
+            .navigationBarColor(backgroundColor: .white, tintColor: .systemTeal)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Press Me") {
+                            print("Pressed")
+                        }
+                    }
+                }
             
-        }
-        .background(.red)
-        .ignoresSafeArea()
+        } // NavigationView
+        
+        
+        
+        
         
         
         
