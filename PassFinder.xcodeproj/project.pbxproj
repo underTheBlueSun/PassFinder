@@ -81,20 +81,20 @@
 		FAB1935F274F017800B10E3F /* PassFinder */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1936E274F018800B10E3F /* Example */,
-				FAB19362274F017800B10E3F /* ContentView.swift */,
-				FAB19364274F018000B10E3F /* Assets.xcassets */,
-				FAB19366274F018000B10E3F /* Preview Content */,
-				FAB19377275465B400B10E3F /* MultiSelectRow.swift */,
-				156D58D2275587CE003F3A9C /* Item.swift */,
+				FAB19360274F017800B10E3F /* PassFinderApp.swift */,
+				FA72D17A275722EE00583C79 /* MainTabView.swift */,
 				156D58D427558A5A003F3A9C /* ItemView.swift */,
+				156D58D2275587CE003F3A9C /* Item.swift */,
+				FAB19377275465B400B10E3F /* MultiSelectRow.swift */,
 				FA72D17C27572A9800583C79 /* CelebView.swift */,
 				FA72D17E27572AB200583C79 /* JobView.swift */,
 				FA72D18027572AC600583C79 /* SetUpView.swift */,
-				FA72D17A275722EE00583C79 /* MainTabView.swift */,
-				FAB19360274F017800B10E3F /* PassFinderApp.swift */,
 				FA72D18227572EE000583C79 /* ColorExtension.swift */,
 				FA72D18427573FA900583C79 /* NavigationBarColor.swift */,
+				FAB19362274F017800B10E3F /* ContentView.swift */,
+				FAB1936E274F018800B10E3F /* Example */,
+				FAB19364274F018000B10E3F /* Assets.xcassets */,
+				FAB19366274F018000B10E3F /* Preview Content */,
 			);
 			path = PassFinder;
 			sourceTree = "<group>";

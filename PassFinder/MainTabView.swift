@@ -49,7 +49,7 @@ private extension MainTabView {
         ItemView()
             .tag(Tabs.item)
             .tabItem {
-              Image(systemName: "checkmark")
+              Image(systemName: "text.badge.checkmark")
 //              Text("검사")
              }
     }

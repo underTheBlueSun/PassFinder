@@ -13,6 +13,7 @@ struct PassFinderApp: App {
         WindowGroup {
 //            ContentView()
             MainTabView()
+//            MainTabView().environmentObject(JsonUpload()).environmentObject(CurriculumViewModel()).environmentObject(ANPViewModel()).environmentObject(SearchViewModel())
         }
     }
 }
