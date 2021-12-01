@@ -69,16 +69,14 @@ struct ItemView: View {
                 } // ForEach
                 
             } // ScrollView
-//            .navigationTitle("SwiftUI")
-            .navigationBarTitle("나의 에너지 방향은", displayMode: .inline)
-            .navigationBarColor(backgroundColor: .white, tintColor: .systemTeal)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button("Press Me") {
-                            print("Pressed")
-                        }
-                    }
-                }
+            .navigationTitle("나의 에너지 방향은")
+//            .navigationBarTitle("나의 에너지 방향은", displayMode: .inline)
+//            .navigationBarColor(backgroundColor: .white, tintColor: .systemTeal)
+//                .toolbar {
+//                    ToolbarItem(placement: .navigationBarLeading) {
+//                        Text("나의 에너지 방향은").font(.system(size: 15)).foregroundColor(.gray)
+//                    }
+//                }
             
         } // NavigationView
         
