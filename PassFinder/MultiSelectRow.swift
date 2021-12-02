@@ -37,20 +37,13 @@ struct MultiSelectRow: View {
                     
                         
                     Text(title)
-                        .foregroundColor(self.isSelected ? Color.black : Color.gray)
-                        .fontWeight(.bold)
-    //                    .font(.title)
-    //                    .foregroundColor(.purple)
-                        .padding(.vertical, 5)
                         .frame(alignment: .leading)
-    //                    .border(Color.purple, width: 5)
-                    
-                    
-                
+                        .foregroundColor(self.isSelected ? Color.passFinderItem1 : Color.white)
+                        .font(.system(size: 17, weight: .heavy))
+//                        .padding(.vertical, 3)
 
                 }
             } // Zstack
         } // Button
-    
     }
 }

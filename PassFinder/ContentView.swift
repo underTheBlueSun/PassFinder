@@ -17,7 +17,7 @@ struct ContentView: View {
             let size = proxy.size
             
             Home(screenSize: size, isSelected: false)
-//                .preferredColorScheme(.dark)
+                .preferredColorScheme(.dark)
 
             
         }

@@ -14,7 +14,8 @@ extension Color {
   static let secondaryText = Color(hex: "#6e6e6e")
   static let background = Color(UIColor.systemGray6)
   static let tabButtonRed = Color(hex: "#FF6559")
-  static let tabbarBackgroud = Color(hex: "#58585D")
+  static let passFinderBG = Color(hex: "#46494C") // 짙은 회색
+  static let passFinderItem1 = Color(hex: "#FC8C04") //주황
 }
 
 extension Color {

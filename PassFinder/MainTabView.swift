@@ -13,8 +13,8 @@ struct MainTabView: View {
 //    @EnvironmentObject private var aNPJsonUpload: ANPJsonUpload
     
     init() {
-//        UITabBar.appearance().barTintColor = UIColor.tertiaryLabel
-//        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+        UITabBar.appearance().barTintColor = UIColor.tertiaryLabel
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
 //        UITabBar.appearance().backgroundColor = UIColor.blue
     }
     
@@ -38,8 +38,6 @@ struct MainTabView: View {
     }
     .accentColor(.systemTeal)
     .edgesIgnoringSafeArea(.top)
-    .onAppear(perform: {
-    })
   }
 }
 
@@ -55,7 +53,7 @@ private extension MainTabView {
     }
     
   var celeb: some View {
-    CelebView()
+      ItemView()
         .tag(Tabs.celeb)
         .tabItem {
             Image(systemName: "person.2.fill")

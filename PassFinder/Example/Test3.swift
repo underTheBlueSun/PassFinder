@@ -10,24 +10,17 @@ import SwiftUI
 struct Test3: View {
     var body: some View {
         
+        
         VStack {
-            
-            Text("dsdfsdsds\nfdsdfds")
-                .frame(width: 270, height: 100)
-                .foregroundColor(.blue)
-                .padding()
-                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.yellow, lineWidth: 10))
-                .navigationTitle("SwiftUI")
-                        .toolbar {
-                            ToolbarItem(placement: .navigationBarLeading) {
-                                Button("Press Me") {
-                                    print("Pressed")
-                                }
-                            }
-                        }
+            Text("Hello, World!")
+                .foregroundColor(.white)
+                .font(.system(size: 20, weight: .heavy))
+                .frame(width: 310, height: 50)
             
             
         }
+
+        
         
         
     }
