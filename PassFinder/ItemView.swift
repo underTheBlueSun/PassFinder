@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ItemView: View {
     @State var selections: [String] = []
+    @State var category: String = ""
+    @State var categoryImage: String = ""
     
     var body: some View {
         
@@ -20,12 +22,22 @@ struct ItemView: View {
         
         VStack {
             
-            Text("나의 에너지 방향은").foregroundColor(Color.white).font(.system(size: 25, weight: .heavy))
+            HStack {
+                Image(categoryImage).resizable().frame(width: 50, height: 50)
+                
+                Text(category).foregroundColor(Color.white).font(.system(size: 25, weight: .heavy))
+                
+            }
+            
             
             
             ScrollView {
                 
                 ForEach(items) { item in
+                    
+                    // 처음부터 0번째 까지 자르기일 경우
+//                    let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
+//                    let result = String(item[...endIdx])
                     
                     ZStack {
                         
@@ -37,10 +49,12 @@ struct ItemView: View {
                         VStack(alignment:.leading) {
                             
                             MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
-                                
+                                // 체크 안된 라디오버튼 클릭할때
                                 if !self.selections.contains(item.type1) {
                                     self.selections.append(item.type1)
                                     self.selections.removeAll(where: { $0 == item.type2 })
+                                    category = item.category
+                                    categoryImage = item.image
                                 }
                             }
                             
@@ -52,6 +66,8 @@ struct ItemView: View {
                                 if !self.selections.contains(item.type2) {
                                     self.selections.append(item.type2)
                                     self.selections.removeAll(where: { $0 == item.type1 })
+                                    category = item.category
+                                    categoryImage = item.image
                                 }
                             }
                             
