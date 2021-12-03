@@ -19,7 +19,7 @@ struct MainTabView: View {
     }
     
     private enum Tabs {
-      case item, celeb, job, science, setup
+      case item, celeb, job, info, setup
     }
 
     @State private var selectedTab: Tabs = .item
@@ -32,6 +32,7 @@ struct MainTabView: View {
         item
         celeb
         job
+        info
         setup
       }
       
@@ -69,6 +70,16 @@ private extension MainTabView {
               Image(systemName: "briefcase.fill")
 //              Text("직업")
           }
+    }
+    
+    var info: some View {
+      SetUpView()
+      .tag(Tabs.info)
+      .tabItem {
+          Image(systemName: "info.circle.fill")
+  //        Text("설정")
+      }
+
     }
   
   var setup: some View {

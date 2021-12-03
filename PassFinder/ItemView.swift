@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ItemView: View {
     @State var selections: [String] = []
-    @State var category: String = ""
-    @State var categoryImage: String = ""
+    @State var category: String = "나의 에너지 방향은?"
+    @State var categoryImage: String = "category1"
     
     var body: some View {
         
@@ -46,6 +46,17 @@ struct ItemView: View {
                             .frame(width: 330, height: 100)
                             .cornerRadius(15)
                         
+//                        VStack {
+//                            Text("1/40")
+//                                .frame(width: 290, alignment: .trailing)
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 11))
+//                                .padding(.vertical, 5)
+//                            Spacer()
+//
+//                        }
+                        
+
                         VStack(alignment:.leading) {
                             
                             MultiSelectRow(title: item.title1, isSelected: self.selections.contains(item.type1)) {
@@ -58,7 +69,7 @@ struct ItemView: View {
                                 }
                             }
                             
-                            Divider().frame(width:300)
+                            Divider().frame(width:300).background(Color.white)
 
                             
                             MultiSelectRow(title: item.title2, isSelected: self.selections.contains(item.type2)) {
@@ -71,12 +82,42 @@ struct ItemView: View {
                                 }
                             }
                             
+                            
                         } // VStack
+                        
                         
                     } // ZStack
                     
-                    
                 } // ForEach
+                
+                VStack {
+                    
+                    Button(action: {
+                        
+                        if selections.count == 40 {
+                            
+                            print("aaa")
+                        }
+        //                                for item in arr {
+        //                                    // 처음부터 0번째 까지 자르기일 경우
+        //                                    let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
+        //                                    let result = String(item[...endIdx])
+        //                                    // dictionary = key:valuefdsfdsfdsfsdfsdfsdfsd
+        //                                    counts[result] = (counts[result] ?? 0) + 1
+        //                                }
+                        
+                    }, label: {
+                        
+                        Text(selections.count == 40 ? "제출하기" : String(40 - selections.count) + "개 더 선택하세요")
+                            .frame(width: 170, height: 25)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 18, weight: .heavy))
+                            .padding(.vertical, 5)
+                    })
+                    .background(Color.systemTeal)
+                    .cornerRadius(10)
+                    
+                }
                 
             } // ScrollView
 
