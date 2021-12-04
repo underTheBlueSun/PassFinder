@@ -47,7 +47,7 @@ struct CustomAlertView: View {
                 
                 // 내용
                 Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].description)
-//                    .foregroundColor(.passFinderItem1)
+                    .foregroundColor(.gray)
                     .padding()
                 
                 VStack(alignment: .trailing) {

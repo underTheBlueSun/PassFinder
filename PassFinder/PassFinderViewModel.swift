@@ -19,11 +19,13 @@ class PassFinderViewModel: ObservableObject {
     
     func countByTypes() {
         
+        counts.removeAll()
+        
         for item in selections {
             // 처음부터 0번째 까지 자르기일 경우
             let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
             let result = String(item[...endIdx])
-            // dictionary = key:valuefdsfdsfdsfsdfsdfsdfsd
+            // dictionary = key:value
             counts[result] = (counts[result] ?? 0) + 1
         }
         

@@ -80,7 +80,7 @@ struct ItemView: View {
                         // 제출하기
                         Button(action: {
                             
-                            if passFinderModel.selections.count != 40 {
+                            if passFinderModel.selections.count == 40 {
                                 
                                 passFinderModel.countByTypes()
                                 customAlert.toggle()
