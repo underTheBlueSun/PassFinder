@@ -25,7 +25,7 @@ struct MainTabView: View {
 //    }
 
 //    @State private var selectedTab: Tabs = .item
-    @State private var selectedTab: Int = 0
+//    @State private var selectedTab: Int = 0
     
   var body: some View {
     
@@ -62,8 +62,15 @@ struct MainTabView: View {
         SetUpView()
         .tag(4)
         .tabItem {
-            Image(systemName: "info.circle.fill")
-    //        Text("설정")
+            if passFinderModel.selectedMine == true {
+                Image(systemName: "xmark.bin.fill")
+                
+            } else {
+                Image(systemName: "info.circle.fill")
+        //        Text("설정")
+                
+            }
+            
         }
 
         

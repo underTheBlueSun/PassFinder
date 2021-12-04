@@ -38,16 +38,15 @@ struct Home: View {
                 }
 
                 Button(action: {
-                    customAlert.toggle()
-//                    withAnimation {
-//                        customAlert.toggle()
-//                    }
+                    withAnimation {
+                        customAlert.toggle()
+                    }
                 }) {
                     Text("custom alert")
                 }
 
 
-            }
+            } // vstack
 
             if HUD {
 
@@ -161,60 +160,60 @@ struct BlurView : UIViewRepresentable {
     }
 }
 
-struct CustomAlertView: View {
-    
-    @Binding var show: Bool
-    
-    var body: some View {
-        
-        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
-            
-            VStack(spacing: 25) {
-                
-                Image(systemName: "text.badge.checkmark")
-                
-                Text("congratulations")
-                    .font(.title)
-                    .foregroundColor(.pink)
-                
-                Text("you have successfully done the work")
-                
-                Button(action: {}) {
-                    
-                    Text("back to home")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal, 25)
-                        .background(Color.purple)
-                        .clipShape(Capsule())
-                }
-            }
-            .padding(.vertical, 25)
-            .padding(.horizontal, 30)
-//            .background(BlurView())
-            .background(Color.blue)
-            .cornerRadius(25)
-            
-            Button(action: {
-                
-                withAnimation {
-                    show.toggle()
-                }
-            }) {
-                Image(systemName: "person.2.fill")
-                    .font(.system(size: 28, weight: .bold))
-                    .foregroundColor(.purple)
-                
-            }
-            .padding()
-            
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.primary.opacity(0.9))
-        
-    }
-}
+//struct CustomAlertView: View {
+//
+//    @Binding var show: Bool
+//
+//    var body: some View {
+//
+//        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+//
+//            VStack(spacing: 25) {
+//
+//                Image(systemName: "text.badge.checkmark")
+//
+//                Text("congratulations")
+//                    .font(.title)
+//                    .foregroundColor(.pink)
+//
+//                Text("you have successfully done the work")
+//
+//                Button(action: {}) {
+//
+//                    Text("back to home")
+//                        .foregroundColor(.white)
+//                        .fontWeight(.bold)
+//                        .padding(.vertical, 10)
+//                        .padding(.horizontal, 25)
+//                        .background(Color.purple)
+//                        .clipShape(Capsule())
+//                }
+//            }
+//            .padding(.vertical, 25)
+//            .padding(.horizontal, 30)
+////            .background(BlurView())
+//            .background(Color.blue)
+//            .cornerRadius(25)
+//
+//            Button(action: {
+//
+//                withAnimation {
+//                    show.toggle()
+//                }
+//            }) {
+//                Image(systemName: "person.2.fill")
+//                    .font(.system(size: 28, weight: .bold))
+//                    .foregroundColor(.purple)
+//
+//            }
+//            .padding()
+//
+//        }
+//        .frame(maxWidth: .infinity, maxHeight: .infinity)
+//        .background(Color.primary.opacity(0.9))
+//
+//    }
+//}
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
