@@ -2,104 +2,222 @@
 //  Home.swift
 //  PassFinder
 //
-//  Created by macbook on 2021/11/25.
+//  Created by underTheBlueSun on 2021/12/04.
 //
 
 import SwiftUI
 
 struct Home: View {
     
-    var screenSize: CGSize
+//    @State var nativeAlert = false
+    @State var customAlert = false
+    @State var HUD = false
+    @State var password = ""
     
-    @State var offset: CGFloat = 0
-    @State var selections: [String] = []
-    @State var isSelected: Bool
+    var body: some View {
+        
+        ZStack {
+            
+            VStack(spacing: 25) {
+                
+                Button(action: {
+                    alertView()
+                }) {
+                    Text("native alert with textfield")
+                }
+
+                Text(password)
+                    .fontWeight(.bold)
+
+                Button(action: {
+                    withAnimation {
+                        HUD.toggle()
+                    }
+                }) {
+                    Text("hud progress view")
+                }
+
+                Button(action: {
+                    customAlert.toggle()
+//                    withAnimation {
+//                        customAlert.toggle()
+//                    }
+                }) {
+                    Text("custom alert")
+                }
+
+
+            }
+
+            if HUD {
+
+                HUDProgressView(placeHolder: "please wait", show: $HUD)
+
+            }
+            
+            if customAlert {
+                
+                CustomAlertView(show: $customAlert)
+            }
+        } // zstack
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    func alertView() {
+
+        let alert = UIAlertController(title: "login", message: "enter passwd", preferredStyle: .alert)
+        alert.addTextField { (pass) in
+            pass.isSecureTextEntry = true
+            pass.placeholder = "password"
+
+        }
+
+        // action button...
+        let login = UIAlertAction(title: "login", style: .default) { (_) in
+            // do your own stuff...
+
+            // retreving password...
+            password = alert.textFields![0].text!
+
+        }
+
+        let cancel = UIAlertAction(title: "cancel", style: .destructive) { (_) in
+            // same...
+
+        }
+
+        // adding into alertview...
+        alert.addAction(cancel)
+        alert.addAction(login)
+
+        // presenting alertview...
+        UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: {
+            // do your own stuff..
+
+        })
+
+    }
+    
+    
+}
+
+struct HUDProgressView: View {
+    
+    var placeHolder: String
+    @Binding var show: Bool
+    @State var animate = false
     
     var body: some View {
         
         VStack {
             
-            Button {
-                
-            } label: {
-                Image(systemName: "square.and.arrow.up.circle.fill")
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(.white)
-                    .frame(width: 30, height: 30)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
+            Circle()
+            // for dark mode adoption...
+                .stroke(AngularGradient(gradient: .init(colors: [Color.primary,Color.primary.opacity(0)]), center: .center))
+                .frame(width: 80, height: 80)
+            // animating...
+                .rotationEffect(.init(degrees: animate ? 360 : 0))
             
-            
-            OffsetPageTabView(offset: $offset) {
+            Text(placeHolder)
+                .fontWeight(.bold)
                 
-                HStack(spacing: 0) {
-                    
-                    ForEach(intros) { intro in
-                        
-                        VStack {
-                            
-                            Image(intro.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: screenSize.height / 3)
-                            
-                            VStack(alignment: .leading, spacing: 22) {
-                                Text(intro.title)
-                                    .font(.largeTitle.bold())
-                                Text(intro.description)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(.secondary)
+            
+        }
+        .padding(.vertical, 25)
+        .padding(.horizontal, 35)
+        .background(BlurView())
+        .cornerRadius(20)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.primary.opacity(0.35)
+                        .onTapGesture {
+                            withAnimation {
+                                // closing view...
+                                show.toggle()
+                                
                             }
-                            .foregroundStyle(.white)
-                            .padding(.top, 20)
-                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
-                        .padding()
-                        // setting max width...
-                        .frame(width: screenSize.width)
-                    } // ForEach
-                    
-                } // HStack
-
-            } // OffsetPageTabView
+        )
+        .onAppear {
             
-            // Animated Indicator...
-            HStack(alignment: .bottom) {
-                
-                Spacer()
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .font(.title2.bold())
-                        .foregroundColor(.white)
-                        .padding(20)
-                        .background(
-                            intros[getIndex()].color,
-                            in: Circle()
-                        )
-                }
+            // starting animation...
+            
+            withAnimation(Animation.linear(duration: 1.5).repeatForever(autoreverses: false)) {
+                animate.toggle()
             }
-            
-        } // VStack
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        }
+    }
+}
+
+struct BlurView : UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: .systemThinMaterial))
         
+        return view
     }
     
-    // Expading index based on offset...
-    func getIndex()->Int {
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
         
-        let prograss = round(offset / screenSize.width)
+    }
+}
+
+struct CustomAlertView: View {
+    
+    @Binding var show: Bool
+    
+    var body: some View {
         
-        return Int(prograss)
+        ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+            
+            VStack(spacing: 25) {
+                
+                Image(systemName: "text.badge.checkmark")
+                
+                Text("congratulations")
+                    .font(.title)
+                    .foregroundColor(.pink)
+                
+                Text("you have successfully done the work")
+                
+                Button(action: {}) {
+                    
+                    Text("back to home")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 25)
+                        .background(Color.purple)
+                        .clipShape(Capsule())
+                }
+            }
+            .padding(.vertical, 25)
+            .padding(.horizontal, 30)
+//            .background(BlurView())
+            .background(Color.blue)
+            .cornerRadius(25)
+            
+            Button(action: {
+                
+                withAnimation {
+                    show.toggle()
+                }
+            }) {
+                Image(systemName: "person.2.fill")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(.purple)
+                
+            }
+            .padding()
+            
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.primary.opacity(0.9))
+        
     }
 }
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }

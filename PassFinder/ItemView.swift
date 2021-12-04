@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ItemView: View {
+    
+    @EnvironmentObject var passFinderModel: PassFinderViewModel
+    
     @State var selections: [String] = []
     @State var category: String = "나의 에너지 방향은?"
     @State var categoryImage: String = "category1"
@@ -28,6 +31,14 @@ struct ItemView: View {
                 Text(category).foregroundColor(Color.white).font(.system(size: 25, weight: .heavy))
                 
             }
+            
+            Button(action: {
+                passFinderModel.selectedTab = 1
+                
+            }, label: {
+                
+                Text("aaaa")
+            })
             
             
             
@@ -91,7 +102,7 @@ struct ItemView: View {
                 } // ForEach
                 
                 VStack {
-                    
+                    // 제출하기
                     Button(action: {
                         
                         if selections.count == 40 {

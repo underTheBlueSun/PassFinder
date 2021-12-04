@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainTabView: View {
 
+    @EnvironmentObject var passFinderModel: PassFinderViewModel
+    
 //    @EnvironmentObject var itemViewModel: itemViewModel
 //    @EnvironmentObject private var aNPJsonUpload: ANPJsonUpload
     
@@ -18,23 +20,60 @@ struct MainTabView: View {
 //        UITabBar.appearance().backgroundColor = UIColor.blue
     }
     
-    private enum Tabs {
-      case item, celeb, job, info, setup
-    }
+//    private enum Tabs {
+//      case item, celeb, job, info, setup
+//    }
 
-    @State private var selectedTab: Tabs = .item
+//    @State private var selectedTab: Tabs = .item
+    @State private var selectedTab: Int = 0
     
   var body: some View {
     
-    TabView(selection: $selectedTab) {
+      TabView(selection: $passFinderModel.selectedTab) {
         
-      Group {
-        item
-        celeb
-        job
-        info
-        setup
-      }
+        ItemView()
+            .tag(0)
+            .tabItem {
+              Image(systemName: "text.badge.checkmark")
+//              Text("검사")
+             }
+        
+        ItemView()
+          .tag(1)
+          .tabItem {
+              Image(systemName: "person.2.fill")
+  //            Text("유명인")
+          }
+        
+        JobView()
+        .tag(2)
+          .tabItem {
+              Image(systemName: "briefcase.fill")
+//              Text("직업")
+          }
+        
+        SetUpView()
+        .tag(3)
+        .tabItem {
+            Image(systemName: "info.circle.fill")
+    //        Text("설정")
+        }
+        
+        SetUpView()
+        .tag(4)
+        .tabItem {
+            Image(systemName: "info.circle.fill")
+    //        Text("설정")
+        }
+
+        
+//      Group {
+//        item
+//        celeb
+//        job
+//        info
+//        setup
+//      }
       
     }
     .accentColor(.systemTeal)
@@ -42,62 +81,62 @@ struct MainTabView: View {
   }
 }
 
-private extension MainTabView {
-    
-    var item: some View {
-        ItemView()
-            .tag(Tabs.item)
-            .tabItem {
-              Image(systemName: "text.badge.checkmark")
-//              Text("검사")
-             }
-    }
-    
-  var celeb: some View {
-      ItemView()
-        .tag(Tabs.celeb)
-        .tabItem {
-            Image(systemName: "person.2.fill")
-//            Text("유명인")
-        }
-
-  }
-    
-    var job: some View {
-        JobView()
-        .tag(Tabs.job)
-          .tabItem {
-              Image(systemName: "briefcase.fill")
-//              Text("직업")
-          }
-    }
-    
-    var info: some View {
-      SetUpView()
-      .tag(Tabs.info)
-      .tabItem {
-          Image(systemName: "info.circle.fill")
-  //        Text("설정")
-      }
-
-    }
-  
-  var setup: some View {
-    SetUpView()
-    .tag(Tabs.setup)
-    .tabItem {
-        Image(systemName: "gearshape.fill")
-//        Text("설정")
-    }
-
-  }
-    
-}
+//private extension MainTabView {
+//
+//    var item: some View {
+//        ItemView()
+//            .tag(Tabs.item)
+//            .tabItem {
+//              Image(systemName: "text.badge.checkmark")
+////              Text("검사")
+//             }
+//    }
+//
+//  var celeb: some View {
+//      ItemView()
+//        .tag(Tabs.celeb)
+//        .tabItem {
+//            Image(systemName: "person.2.fill")
+////            Text("유명인")
+//        }
+//
+//  }
+//
+//    var job: some View {
+//        JobView()
+//        .tag(Tabs.job)
+//          .tabItem {
+//              Image(systemName: "briefcase.fill")
+////              Text("직업")
+//          }
+//    }
+//
+//    var info: some View {
+//      SetUpView()
+//      .tag(Tabs.info)
+//      .tabItem {
+//          Image(systemName: "info.circle.fill")
+//  //        Text("설정")
+//      }
+//
+//    }
+//
+//  var setup: some View {
+//    SetUpView()
+//    .tag(Tabs.setup)
+//    .tabItem {
+//        Image(systemName: "gearshape.fill")
+////        Text("설정")
+//    }
+//
+//  }
+//
+//}
 
 struct MainTabView_Previews: PreviewProvider {
   static var previews: some View {
     MainTabView()
-//        .environmentObject(CurriculumViewModel())
+        .environmentObject(PassFinderViewModel())
 //        .environmentObject(JsonUpload())
     
   }

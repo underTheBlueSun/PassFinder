@@ -12,6 +12,8 @@
 		156D58D3275587CE003F3A9C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D2275587CE003F3A9C /* Item.swift */; };
 		156D58D527558A5A003F3A9C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D427558A5A003F3A9C /* ItemView.swift */; };
 		15834A522756DF8400625EE6 /* Test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A512756DF8300625EE6 /* Test3.swift */; };
+		15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */; };
+		15834A56275AECE400625EE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A55275AECE400625EE6 /* Home.swift */; };
 		FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17A275722EE00583C79 /* MainTabView.swift */; };
 		FA72D17D27572A9800583C79 /* CelebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17C27572A9800583C79 /* CelebView.swift */; };
 		FA72D17F27572AB200583C79 /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17E27572AB200583C79 /* JobView.swift */; };
@@ -22,7 +24,7 @@
 		FAB19363274F017800B10E3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19362274F017800B10E3F /* ContentView.swift */; };
 		FAB19365274F018000B10E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB19364274F018000B10E3F /* Assets.xcassets */; };
 		FAB19368274F018000B10E3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB19367274F018000B10E3F /* Preview Assets.xcassets */; };
-		FAB19370274F01A300B10E3F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1936F274F01A300B10E3F /* Home.swift */; };
+		FAB19370274F01A300B10E3F /* OffsetPageTabView_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1936F274F01A300B10E3F /* OffsetPageTabView_Home.swift */; };
 		FAB19372274F01C100B10E3F /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19371274F01C100B10E3F /* Intro.swift */; };
 		FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */; };
 		FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19377275465B400B10E3F /* MultiSelectRow.swift */; };
@@ -34,6 +36,8 @@
 		156D58D2275587CE003F3A9C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		156D58D427558A5A003F3A9C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		15834A512756DF8300625EE6 /* Test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3.swift; sourceTree = "<group>"; };
+		15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFinderViewModel.swift; sourceTree = "<group>"; };
+		15834A55275AECE400625EE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FA72D17A275722EE00583C79 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FA72D17C27572A9800583C79 /* CelebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebView.swift; sourceTree = "<group>"; };
 		FA72D17E27572AB200583C79 /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		FAB19362274F017800B10E3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB19364274F018000B10E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB19367274F018000B10E3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAB1936F274F01A300B10E3F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FAB1936F274F01A300B10E3F /* OffsetPageTabView_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView_Home.swift; sourceTree = "<group>"; };
 		FAB19371274F01C100B10E3F /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		FAB19377275465B400B10E3F /* MultiSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectRow.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				FA72D18227572EE000583C79 /* ColorExtension.swift */,
 				FA72D18427573FA900583C79 /* NavigationBarColor.swift */,
 				FAB19362274F017800B10E3F /* ContentView.swift */,
+				15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */,
 				FAB1936E274F018800B10E3F /* Example */,
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
 				FAB19366274F018000B10E3F /* Preview Content */,
@@ -110,12 +115,13 @@
 		FAB1936E274F018800B10E3F /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1936F274F01A300B10E3F /* Home.swift */,
+				FAB1936F274F01A300B10E3F /* OffsetPageTabView_Home.swift */,
 				FAB19371274F01C100B10E3F /* Intro.swift */,
 				FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */,
 				156D58C82752254D003F3A9C /* arrCnt.swift */,
 				156D58CA2754EB91003F3A9C /* Test2.swift */,
 				15834A512756DF8300625EE6 /* Test3.swift */,
+				15834A55275AECE400625EE6 /* Home.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -191,13 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB19363274F017800B10E3F /* ContentView.swift in Sources */,
-				FAB19370274F01A300B10E3F /* Home.swift in Sources */,
+				15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */,
+				FAB19370274F01A300B10E3F /* OffsetPageTabView_Home.swift in Sources */,
 				156D58D527558A5A003F3A9C /* ItemView.swift in Sources */,
 				FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */,
 				FA72D18527573FA900583C79 /* NavigationBarColor.swift in Sources */,
 				156D58CB2754EB91003F3A9C /* Test2.swift in Sources */,
 				FA72D17D27572A9800583C79 /* CelebView.swift in Sources */,
 				15834A522756DF8400625EE6 /* Test3.swift in Sources */,
+				15834A56275AECE400625EE6 /* Home.swift in Sources */,
 				FAB19372274F01C100B10E3F /* Intro.swift in Sources */,
 				FA72D17F27572AB200583C79 /* JobView.swift in Sources */,
 				FA72D18127572AC600583C79 /* SetUpView.swift in Sources */,

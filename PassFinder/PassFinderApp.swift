@@ -11,9 +11,10 @@ import SwiftUI
 struct PassFinderApp: App {
     var body: some Scene {
         WindowGroup {
+//            Test3()
 //            ContentView()
-            MainTabView()
-//            MainTabView().environmentObject(JsonUpload()).environmentObject(CurriculumViewModel()).environmentObject(ANPViewModel()).environmentObject(SearchViewModel())
+//            MainTabView()
+            MainTabView().environmentObject(PassFinderViewModel())
         }
     }
 }

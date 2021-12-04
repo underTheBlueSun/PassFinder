@@ -1,60 +1,39 @@
+//struct MainView: View {
+//    var body: some View {
+//        NavigationView {
+//            List {
+//                Text("1")
+//                Text("2")
+//            }.navigationBarTitle("Main View")
+//        }
+//    }
+//}
+// 
+//struct SubView: View {
+//    var body: some View {
+//        VStack(spacing: 10.0) {
+//            Text("간단한 소개")
+//                .foregroundColor(.orange)
+//                .bold()
+//            Text("Tab View를 활용한 화면입니다.")
+//        }
+//    }
+//}
+// 
+//final class TabViewManager: ObservableObject {
+//    @Published var currentTab = 0
+// 
+//    static let shared = TabViewManager()
+// 
+//    func abc() {
+//        let tab = TabView() {
+//            MainView().tabItem {
+//                Text("Main View")
+//            }.tag(0)
+//            SubView().tabItem {
+//                Text("Sub View")
+//            }.tag(1)
+//        }
+//    }
+//}
 //
-//  Test3.swift
-//  PassFinder
-//
-//  Created by underTheBlueSun on 2021/12/01.
-//
-
-import SwiftUI
-
-struct Test3: View {
-    var body: some View {
-        
-        
-        VStack {
-            Button(action: {
-//                                for item in arr {
-//                                    // 처음부터 0번째 까지 자르기일 경우
-//                                    let endIdx: String.Index = item.index(item.startIndex, offsetBy: 0)
-//                                    let result = String(item[...endIdx])
-//                                    // dictionary = key:valuefdsfdsfdsfsdfsdfsdfsd
-//                                    counts[result] = (counts[result] ?? 0) + 1
-//                                }
-                
-            }, label: {
-                Text("40개 더 선택하세요")
-                    .frame(width: 170, height: 25)
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 18, weight: .heavy))
-                    .padding(.vertical, 5)
-            })
-            .background(Color.systemTeal)
-            .cornerRadius(10)
-            
-            Button(action: {
-                    print("sign up bin tapped")
-            }) {
-                Text("SIGN UP")
-                 .frame(width: 100)
-                  .font(.system(size: 18))
-                  .padding()
-                  .foregroundColor(.red)
-             }
-//              .border(Color.black, width: 2)
-            .background(Color.systemTeal)
-              .cornerRadius(25)
-            
-            
-        }
-
-        
-        
-        
-    }
-}
-
-struct Test3_Previews: PreviewProvider {
-    static var previews: some View {
-        Test3()
-    }
-}

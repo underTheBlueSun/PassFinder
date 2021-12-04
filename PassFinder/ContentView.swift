@@ -12,15 +12,17 @@ struct ContentView: View {
     var body: some View {
         
         // Gatting ScreenSize Globally...
-        GeometryReader { proxy in
-            
-            let size = proxy.size
-            
-            Home(screenSize: size, isSelected: false)
-                .preferredColorScheme(.dark)
-
-            
-        }
+//        GeometryReader { proxy in
+//
+//            let size = proxy.size
+//
+//            Home(screenSize: size, isSelected: false)
+//                .preferredColorScheme(.dark)
+//
+//
+//        }
+        
+        Text("aaa")
         
     }
 }
