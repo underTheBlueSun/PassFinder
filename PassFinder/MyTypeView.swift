@@ -18,7 +18,7 @@ struct MyTypeView: View {
             Text("나의 유형")
 //                .frame(width: 320, alignment: .leading)
                 .foregroundColor(.white)
-                .font(.system(size: 30, weight: .heavy))
+                .font(.system(size: 28, weight: .heavy))
 //                .padding()
             
             VStack(spacing: 0) {
