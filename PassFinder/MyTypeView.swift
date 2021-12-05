@@ -19,23 +19,21 @@ struct MyTypeView: View {
 //                .frame(width: 320, alignment: .leading)
                 .foregroundColor(.white)
                 .font(.system(size: 28, weight: .heavy))
-//                .padding()
             
             VStack(spacing: 0) {
                 
-                HStack {
+                HStack(spacing: 20) {
+                    
+                    Image("ENTJ")
+                        .resizable()
+                        .cornerRadius(10)
+                        .frame(width: 120, height: 130)
                     
                     VStack(spacing: 0) {
                         
-                        Image("ENTJ")
-                            .resizable()
-                            .cornerRadius(10)
-                            .frame(width: 100, height: 90)
-                        
-        //                Text(passFinderModel.myType)
                         Text("ISTP")
                             .foregroundColor(.systemTeal)
-                            .font(.system(size: 25, weight: .heavy))
+                            .font(.system(size: 45, weight: .heavy))
                             .padding(.vertical, 1)
                         
                         Divider().frame(width:100).background(Color.gray)
@@ -43,26 +41,26 @@ struct MyTypeView: View {
         //                Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].title)
                         Text("잔다르크형")
                             .foregroundColor(.passFinderItem1)
-                            .font(.system(size: 13, weight: .heavy))
+                            .font(.system(size: 20, weight: .heavy))
                             .padding(.vertical, 2)
-                    } // vstack
-                    .padding()
-                    
-                    ScrollView {
                         
-                        Text("dsfasfasdfsdfsdafsdafsdafdsafsdfasdfsdafsdafsdfsdafdsfdsfdsfdsfdsfdfdsfds")
-                    }
-                    .frame(width: 180, height: 150)
+                    } // vstack
+                    
                     
                 } // hstack
+                .padding()
                 
+                ScrollView {
+                    
+                    Text("dsfasfasdfsdfsdafsdafsdafdsafsdfasdfsdafsdafsdfsdafdsfdsfdsfdsfdsfdfdsfdsdfsdfsdfdsfdsfsdfsdfssdfsdfdsfdsfsdfdsfdsfdsfdsfsdfsdfdsfsdfsdfsdfsdfdsfsdfsdfdfghfhgf;hl;l;dfm34054305i4395-2340djvxcljewrkpwerkpeqewpripewrperperepdffjsdkf;sadkfaskf;asdfk")
+                }
+                .frame(width: 270, height: 120)
                 
-                
-                
-            }
-            .frame(width: 350, height: 200)
+            } // vstack
+            .frame(width: 350, height: 320)
             .background(.white)
             .cornerRadius(10)
+            .padding()
             
             Spacer()
             
