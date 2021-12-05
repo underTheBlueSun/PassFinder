@@ -9,13 +9,13 @@ import SwiftUI
 
 class PassFinderViewModel: ObservableObject {
     
-    @Published var selectedTab: Int = 0     // '나' 또는 '다른사람'으로 등록 클릭시
-    @Published var selectedMine: Bool = false       // '나'로 등록 클릭시
+    @Published var selectedTab: Int = 0     // '나' 또는 '다른사람'으로 저장시 탭 이동
+    @Published var customAlert: Bool = false       // '나' 또는 '다른사람'으로 저장시 alert 닫기
     @Published var selections: [String] = []
     @Published var counts: [String: Int] = [:]
     @Published var myType: String = ""
     @Published var name: String = ""
-    @Published var filteredArray: [Type] = []
+    @Published var filteredArray: [Type] = []       // 나의 타입 정보의 배열
     
     func countByTypes() {
         
@@ -87,6 +87,11 @@ class PassFinderViewModel: ObservableObject {
         
         
     } // func countByTypes
+    
+    func saveData() {
+        
+        
+    }
     
 //    @Published var grade = UserDefaults.standard.string(forKey: "Grade") ?? ""
 //    @Published var semester = UserDefaults.standard.string(forKey: "Semester") ?? ""

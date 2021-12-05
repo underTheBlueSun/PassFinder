@@ -19,7 +19,7 @@ struct CustomAlertView: View {
         
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
             
-            VStack(spacing: 25) {
+            VStack(spacing: 30) {
                 
 //                Image(systemName: "text.badge.checkmark")
                 
@@ -43,47 +43,64 @@ struct CustomAlertView: View {
                         .foregroundColor(.passFinderItem1)
                         .font(.system(size: 18, weight: .heavy))
                     
-                }
+                } // vstack
                 
                 // 내용
-                Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].description)
-                    .foregroundColor(.gray)
-                    .padding()
+                ScrollView {
+                    Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].description)
+                        .foregroundColor(.gray)
+                        .padding()
+                        
+                }
+                .frame(width: 300, height: 200)
+                
                 
                 VStack(alignment: .trailing) {
 //                    Spacer()
-                    Button(action: {}) {
+                    Button(action: {
+                        
+                        passFinderModel.selectedTab = 1
+                        passFinderModel.selections.removeAll()
+                        passFinderModel.customAlert = false
+                        
+                    }) {
                         
                         Text("나로 저장")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
-                            .padding(.vertical, 8)
+                            .padding(.vertical, 7)
                             .padding(.horizontal, 10)
-                            .background(Color.purple)
+                            .background(Color.passFinderItem1)
     //                        .clipShape(Capsule())
                     }
                     .cornerRadius(10)
                     
                     HStack {
                         
+                        
                         TextField("이름입력..", text: $passFinderModel.name).font(.system(size: 15, weight: .heavy)).frame(width: 100)
     //                    Spacer()
-                        Button(action: {}) {
+                        Button(action: {
+                            
+                            passFinderModel.selectedTab = 1
+                            passFinderModel.selections.removeAll()
+                            passFinderModel.customAlert = false
+                            
+                        }) {
                             
                             Text("다른 사람으로 저장")
                                 .foregroundColor(.white)
                                 .fontWeight(.bold)
-                                .padding(.vertical, 8)
+                                .padding(.vertical, 7)
                                 .padding(.horizontal, 10)
-                                .background(Color.purple)
+                                .background(Color.passFinderItem1)
     //                            .clipShape(Capsule())
                         }
                         .cornerRadius(10)
                         
-                    }
+                    } // hstack
                     
-                }
-                
+                } // vstack
 
             } // vstack
             .padding(.vertical, 25)

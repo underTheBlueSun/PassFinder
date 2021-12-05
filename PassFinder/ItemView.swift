@@ -15,7 +15,7 @@ struct ItemView: View {
     @State var category: String = "나의 에너지 방향은?"
     @State var categoryImage: String = "category1"
     
-    @State var customAlert = false
+//    @State var customAlert = false
     
     var body: some View {
         
@@ -33,16 +33,16 @@ struct ItemView: View {
                 ScrollView {
                     
                     ForEach(items) { item in
-                                            
+
                         ZStack {
-                            
+
                             Rectangle()
                                 .fill(Color.black).opacity(0.4)
                                 .frame(width: 330, height: 100)
                                 .cornerRadius(15)
-                            
+
                             VStack(alignment:.leading) {
-                                
+
                                 MultiSelectRow(title: item.title1, isSelected: passFinderModel.selections.contains(item.type1)) {
                                     // 체크 안된 라디오버튼 클릭할때
                                     if !passFinderModel.selections.contains(item.type1) {
@@ -52,12 +52,12 @@ struct ItemView: View {
                                         categoryImage = item.image
                                     }
                                 }
-                                
+
                                 Divider().frame(width:300).background(Color.white)
 
-                                
+
                                 MultiSelectRow(title: item.title2, isSelected: passFinderModel.selections.contains(item.type2)) {
-                                    
+
                                     if !passFinderModel.selections.contains(item.type2) {
                                         passFinderModel.selections.append(item.type2)
                                         passFinderModel.selections.removeAll(where: { $0 == item.type1 })
@@ -65,30 +65,30 @@ struct ItemView: View {
                                         categoryImage = item.image
                                     }
                                 }
-                                
-                                
+
+
                             } // VStack
-                            
-                            
-                            
+
+
+
                         } // ZStack
                         .edgesIgnoringSafeArea(.all)
-                        
+
                     } // ForEach
                     
                     VStack {
                         // 제출하기
                         Button(action: {
-                            
-                            if passFinderModel.selections.count == 40 {
-                                
+
+                            if passFinderModel.selections.count != 40 {
+
                                 passFinderModel.countByTypes()
-                                customAlert.toggle()
+                                passFinderModel.customAlert.toggle()
 
                             }
-                            
+
                         }, label: {
-                            
+
                             Text(passFinderModel.selections.count == 40 ? "제출하기" : String(40 - passFinderModel.selections.count) + "개 더 선택하세요")
                                 .frame(width: 170, height: 25)
                                 .foregroundColor(Color.white)
@@ -98,18 +98,19 @@ struct ItemView: View {
                         .background(Color.systemTeal)
                         .cornerRadius(10)
                         
-                    }
+                    } // vstack
                     
                 } // ScrollView
+                
 
                 Spacer()
             }
             .frame(maxWidth: .infinity)
             .background(Color.passFinderBG)
             
-            if customAlert {
-                
-                CustomAlertView(show: $customAlert)
+            if passFinderModel.customAlert {
+
+                CustomAlertView(show: $passFinderModel.customAlert)
             }
             
         }
@@ -121,6 +122,6 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView()
+        ItemView().environmentObject(PassFinderViewModel())
     }
 }

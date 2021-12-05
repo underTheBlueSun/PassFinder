@@ -12,6 +12,8 @@
 		156D58CB2754EB91003F3A9C /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58CA2754EB91003F3A9C /* Test2.swift */; };
 		156D58D3275587CE003F3A9C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D2275587CE003F3A9C /* Item.swift */; };
 		156D58D527558A5A003F3A9C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D427558A5A003F3A9C /* ItemView.swift */; };
+		157EBA3A275C543B001BFB3C /* MyTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA39275C543B001BFB3C /* MyTypeView.swift */; };
+		157EBA3C275C61EA001BFB3C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA3B275C61EA001BFB3C /* Person.swift */; };
 		15834A522756DF8400625EE6 /* Test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A512756DF8300625EE6 /* Test3.swift */; };
 		15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */; };
 		15834A56275AECE400625EE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A55275AECE400625EE6 /* Home.swift */; };
@@ -38,6 +40,8 @@
 		156D58CA2754EB91003F3A9C /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
 		156D58D2275587CE003F3A9C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		156D58D427558A5A003F3A9C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		157EBA39275C543B001BFB3C /* MyTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTypeView.swift; sourceTree = "<group>"; };
+		157EBA3B275C61EA001BFB3C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		15834A512756DF8300625EE6 /* Test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3.swift; sourceTree = "<group>"; };
 		15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFinderViewModel.swift; sourceTree = "<group>"; };
 		15834A55275AECE400625EE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				156D58D427558A5A003F3A9C /* ItemView.swift */,
 				156D58D2275587CE003F3A9C /* Item.swift */,
 				152CDCEF275B476A008C8B98 /* Type.swift */,
+				157EBA3B275C61EA001BFB3C /* Person.swift */,
 				FAB19377275465B400B10E3F /* MultiSelectRow.swift */,
 				FA72D17C27572A9800583C79 /* CelebView.swift */,
 				FA72D17E27572AB200583C79 /* JobView.swift */,
@@ -103,6 +108,7 @@
 				FAB19362274F017800B10E3F /* ContentView.swift */,
 				15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */,
 				15834A57275B30B900625EE6 /* CustomAlertView.swift */,
+				157EBA39275C543B001BFB3C /* MyTypeView.swift */,
 				FAB1936E274F018800B10E3F /* Example */,
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
 				FAB19366274F018000B10E3F /* Preview Content */,
@@ -211,6 +217,7 @@
 				156D58CB2754EB91003F3A9C /* Test2.swift in Sources */,
 				FA72D17D27572A9800583C79 /* CelebView.swift in Sources */,
 				15834A522756DF8400625EE6 /* Test3.swift in Sources */,
+				157EBA3C275C61EA001BFB3C /* Person.swift in Sources */,
 				15834A56275AECE400625EE6 /* Home.swift in Sources */,
 				15834A58275B30B900625EE6 /* CustomAlertView.swift in Sources */,
 				152CDCF0275B476A008C8B98 /* Type.swift in Sources */,
@@ -220,6 +227,7 @@
 				FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */,
 				FA72D18327572EE000583C79 /* ColorExtension.swift in Sources */,
 				156D58D3275587CE003F3A9C /* Item.swift in Sources */,
+				157EBA3A275C543B001BFB3C /* MyTypeView.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
 				FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */,

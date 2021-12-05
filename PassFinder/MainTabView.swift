@@ -38,38 +38,32 @@ struct MainTabView: View {
 //              Text("검사")
              }
         
-        ItemView()
+        MyTypeView()
           .tag(1)
           .tabItem {
-              Image(systemName: "person.2.fill")
-  //            Text("유명인")
+              Image(systemName: "brain.head.profile")
+  //            Text("나")
           }
         
         JobView()
         .tag(2)
           .tabItem {
-              Image(systemName: "briefcase.fill")
-//              Text("직업")
+              Image(systemName: "person.2.fill")
+//              Text("사람들")
           }
         
         SetUpView()
         .tag(3)
         .tabItem {
-            Image(systemName: "info.circle.fill")
-    //        Text("설정")
+            Image(systemName: "16.circle.fill")
+    //        Text("유형들")
         }
         
         SetUpView()
         .tag(4)
         .tabItem {
-            if passFinderModel.selectedMine == true {
-                Image(systemName: "xmark.bin.fill")
-                
-            } else {
-                Image(systemName: "info.circle.fill")
-        //        Text("설정")
-                
-            }
+            Image(systemName: "info.circle.fill")
+    //        Text("설정")
             
         }
 
