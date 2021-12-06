@@ -21,7 +21,6 @@
 		15834A58275B30B900625EE6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A57275B30B900625EE6 /* CustomAlertView.swift */; };
 		FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17A275722EE00583C79 /* MainTabView.swift */; };
 		FA72D17D27572A9800583C79 /* CelebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17C27572A9800583C79 /* CelebView.swift */; };
-		FA72D17F27572AB200583C79 /* PersonView in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17E27572AB200583C79 /* PersonView */; };
 		FA72D18127572AC600583C79 /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18027572AC600583C79 /* SetUpView.swift */; };
 		FA72D18327572EE000583C79 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18227572EE000583C79 /* ColorExtension.swift */; };
 		FA72D18527573FA900583C79 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18427573FA900583C79 /* NavigationBarColor.swift */; };
@@ -50,7 +49,6 @@
 		15834A57275B30B900625EE6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		FA72D17A275722EE00583C79 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FA72D17C27572A9800583C79 /* CelebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebView.swift; sourceTree = "<group>"; };
-		FA72D17E27572AB200583C79 /* PersonView */ = {isa = PBXFileReference; lastKnownFileType = text; path = PersonView; sourceTree = "<group>"; };
 		FA72D18027572AC600583C79 /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpView.swift; sourceTree = "<group>"; };
 		FA72D18227572EE000583C79 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		FA72D18427573FA900583C79 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				157EBA3B275C61EA001BFB3C /* Person.swift */,
 				FAB19377275465B400B10E3F /* MultiSelectRow.swift */,
 				FA72D17C27572A9800583C79 /* CelebView.swift */,
-				FA72D17E27572AB200583C79 /* PersonView */,
 				FA72D18027572AC600583C79 /* SetUpView.swift */,
 				FA72D18227572EE000583C79 /* ColorExtension.swift */,
 				FA72D18427573FA900583C79 /* NavigationBarColor.swift */,
@@ -225,7 +222,6 @@
 				15834A58275B30B900625EE6 /* CustomAlertView.swift in Sources */,
 				152CDCF0275B476A008C8B98 /* Type.swift in Sources */,
 				FAB19372274F01C100B10E3F /* Intro.swift in Sources */,
-				FA72D17F27572AB200583C79 /* PersonView in Sources */,
 				FA72D18127572AC600583C79 /* SetUpView.swift in Sources */,
 				FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */,
 				FA72D18327572EE000583C79 /* ColorExtension.swift in Sources */,
