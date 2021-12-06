@@ -14,7 +14,7 @@ struct PassFinderApp: App {
 //            Test3()
 //            ContentView()
 //            MainTabView()
-            MainTabView().environmentObject(PassFinderViewModel())
+            MainTabView().environmentObject(PassFinderViewModel()).environment(\.colorScheme, .light)
         }
     }
 }

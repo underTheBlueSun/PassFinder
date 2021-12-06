@@ -45,7 +45,7 @@ struct MainTabView: View {
   //            Text("나")
           }
         
-        JobView()
+        PersonView()
         .tag(2)
           .tabItem {
               Image(systemName: "person.2.fill")
