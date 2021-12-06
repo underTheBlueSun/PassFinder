@@ -18,15 +18,16 @@ struct MyTypeView: View {
             VStack(spacing:0) {
                 
                 Text("나의 유형")
+                    .frame(width: 100, height: 40)
                     .foregroundColor(.white)
-                    .font(.system(size: 25, weight: .heavy))
+                    .font(.system(size: 22, weight: .heavy))
                 
                 HStack(spacing: 20) {
                     
                     Image("ESFJ")
                         .resizable()
                         .cornerRadius(10)
-                        .frame(width: 100, height: 110)
+                        .frame(width: 90, height: 90)
                     
                     VStack(spacing: 0) {
                         
@@ -47,7 +48,7 @@ struct MyTypeView: View {
                     
                     
                 } // hstack
-                .padding()
+//                .padding()
                 
                 ScrollView {
                     
@@ -66,12 +67,12 @@ struct MyTypeView: View {
                             
                             Capsule()
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 15)
+                                .frame(width: 300, height: 10)
                             
                             Capsule()
                                 .foregroundColor(.systemTeal)
                             // 50% 일 경우
-                                .frame(width: (300 * 5) / 10, height: 15)
+                                .frame(width: (300 * 5) / 10, height: 10)
 
                         } // zstack
 //                        .padding(.vertical, 2)
@@ -94,12 +95,12 @@ struct MyTypeView: View {
                             
                             Capsule()
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 15)
+                                .frame(width: 300, height: 10)
                             
                             Capsule()
-                                .foregroundColor(.systemTeal)
+                                .foregroundColor(Color.passFinderItem1)
                             // 50% 일 경우
-                                .frame(width: (300 * 5) / 10, height: 15)
+                                .frame(width: (300 * 5) / 10, height: 10)
 
                         } // zstack
 //                        .padding(.vertical, 2)
@@ -122,12 +123,12 @@ struct MyTypeView: View {
                             
                             Capsule()
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 15)
+                                .frame(width: 300, height: 10)
                             
                             Capsule()
-                                .foregroundColor(.systemTeal)
+                                .foregroundColor(.yellow)
                             // 50% 일 경우
-                                .frame(width: (300 * 5) / 10, height: 15)
+                                .frame(width: (300 * 5) / 10, height: 10)
 
                         } // zstack
 //                        .padding(.vertical, 2)
@@ -148,12 +149,12 @@ struct MyTypeView: View {
                             
                             Capsule()
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 15)
+                                .frame(width: 300, height: 10)
                             
                             Capsule()
-                                .foregroundColor(.systemTeal)
+                                .foregroundColor(.purple)
                             // 50% 일 경우
-                                .frame(width: (300 * 5) / 10, height: 15)
+                                .frame(width: (300 * 5) / 10, height: 10)
 
                         } // zstack
 //                        .padding(.vertical, 2)
@@ -169,10 +170,18 @@ struct MyTypeView: View {
 //                    Spacer()
                     
                 } // vstack
-                .frame(width: 340, height: 250)
+                .frame(width: 340, height: 230)
                 .background(Color.passFinderDark)
                 .cornerRadius(10)
                 .padding()
+                
+                VStack {
+                    Text("나와 닯은 유명인들").foregroundColor(.white)
+                }
+                .frame(width: 340, height: 230)
+                .background(Color.passFinderDark)
+                .cornerRadius(10)
+//                .padding()
                 
             
                 
