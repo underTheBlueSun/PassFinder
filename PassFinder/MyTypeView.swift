@@ -59,11 +59,118 @@ struct MyTypeView: View {
                 
                 VStack(spacing: 0) {
                     
-                    Text("그래프")
+                    VStack(spacing: 0) {
+                        Text("에너지방향").foregroundColor(.white)
+                        
+                        ZStack(alignment: .leading) {
+                            
+                            Capsule()
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 15)
+                            
+                            Capsule()
+                                .foregroundColor(.systemTeal)
+                            // 50% 일 경우
+                                .frame(width: (300 * 5) / 10, height: 15)
+
+                        } // zstack
+//                        .padding(.vertical, 2)
+                        
+                        HStack {
+                            Text("외향").foregroundColor(.white).padding(.horizontal, 20)
+                            Spacer()
+                            Text("내향").foregroundColor(.white).padding(.horizontal, 20)
+                        }
+                    }
+                    
+                    
+                    
+//                    Spacer()
+                    
+                    VStack(spacing: 0) {
+                        Text("인식기능").foregroundColor(.white)
+                        
+                        ZStack(alignment: .leading) {
+                            
+                            Capsule()
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 15)
+                            
+                            Capsule()
+                                .foregroundColor(.systemTeal)
+                            // 50% 일 경우
+                                .frame(width: (300 * 5) / 10, height: 15)
+
+                        } // zstack
+//                        .padding(.vertical, 2)
+                        
+                        HStack {
+                            Text("감각").foregroundColor(.white).padding(.horizontal, 20)
+                            Spacer()
+                            Text("직관").foregroundColor(.white).padding(.horizontal, 20)
+                        }
+                    }
+                    
+                    
+                    
+//                Spacer()
+                    
+                    VStack(spacing: 0) {
+                        Text("판단기능").foregroundColor(.white)
+                        
+                        ZStack(alignment: .leading) {
+                            
+                            Capsule()
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 15)
+                            
+                            Capsule()
+                                .foregroundColor(.systemTeal)
+                            // 50% 일 경우
+                                .frame(width: (300 * 5) / 10, height: 15)
+
+                        } // zstack
+//                        .padding(.vertical, 2)
+                        
+                        HStack {
+                            Text("사고").foregroundColor(.white).padding(.horizontal, 20)
+                            Spacer()
+                            Text("감정").foregroundColor(.white).padding(.horizontal, 20)
+                        }
+                    }
+                    
+//                    Spacer()
+                    
+                    VStack(spacing: 0) {
+                        Text("생활양식").foregroundColor(.white)
+                        
+                        ZStack(alignment: .leading) {
+                            
+                            Capsule()
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 15)
+                            
+                            Capsule()
+                                .foregroundColor(.systemTeal)
+                            // 50% 일 경우
+                                .frame(width: (300 * 5) / 10, height: 15)
+
+                        } // zstack
+//                        .padding(.vertical, 2)
+                        
+                        HStack {
+                            Text("판단").foregroundColor(.white).padding(.horizontal, 20)
+                            Spacer()
+                            Text("인식").foregroundColor(.white).padding(.horizontal, 20)
+                        }
+                        
+                    }
+                    
+//                    Spacer()
                     
                 } // vstack
-                .frame(width: 340, height: 320)
-                .background(.white)
+                .frame(width: 340, height: 250)
+                .background(Color.passFinderDark)
                 .cornerRadius(10)
                 .padding()
                 
