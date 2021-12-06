@@ -13,21 +13,11 @@ struct CustomAlertView: View {
     
     @Binding var show: Bool
     
-    
-    
     var body: some View {
         
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
             
             VStack(spacing: 30) {
-                
-//                Image(systemName: "text.badge.checkmark")
-                
-//                Text(String(passFinderModel.selections.count))
-//                    .font(.title)
-//                    .foregroundColor(.pink)
-//                
-//                Text(String(passFinderModel.counts.count))
                 
                 VStack(spacing: 3)  {
                     
@@ -108,9 +98,11 @@ struct CustomAlertView: View {
             .background(Color.white)
             .cornerRadius(25)
             
+            // 창 닫기
             Button(action: {
                 
                 withAnimation {
+                    passFinderModel.name = ""
                     show.toggle()
                 }
             }) {

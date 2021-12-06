@@ -14,7 +14,7 @@ struct PersonView: View {
             
             ScrollView {
                 
-                NavigationLink(destination: Text("aaaa")) {
+                NavigationLink(destination: DetailTypeView()) {
                     
                     VStack(spacing:0) {
                         HStack(spacing: 20) {
@@ -39,43 +39,21 @@ struct PersonView: View {
                                     .padding(.vertical, 2)
                                 
                             } // vstack
-                            .padding()
+//                            .padding()
                             
-                        } // hstack
-                        
-                    } // vstack
-                    .frame(width: 340, height: 80)
-                    .background(Color.passFinderDark).opacity(0.8)
-                    .cornerRadius(10)
-                    
-                } // NavigationLink
-                
-                NavigationLink(destination: Text("aaaa")) {
-                    
-                    VStack(spacing:0) {
-                        HStack(spacing: 20) {
-                            
-                            Text("엄민욱")
-                                .foregroundColor(.white)
-                                .font(.system(size: 40, weight: .heavy))
-                                .padding()
-
-                            VStack(spacing: 0) {
+                            Button(action: {
                                 
-                                Text("ISTP")
-                                    .foregroundColor(.systemTeal)
-                                    .font(.system(size: 30, weight: .heavy))
-                                    .padding(.vertical, 1)
+//                                withAnimation {
+//                                    passFinderModel.name = ""
+//                                    show.toggle()
+//                                }
+                            }) {
+                                Image(systemName: "xmark.circle.fill")
+                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundColor(.gray).opacity(0.5)
                                 
-                                Divider().frame(width:110, height: 1).background(Color.white)
-                                
-                                Text("잔다르크형")
-                                    .foregroundColor(.passFinderItem1)
-                                    .font(.system(size: 18, weight: .heavy))
-                                    .padding(.vertical, 2)
-                                
-                            } // vstack
-                            .padding()
+                            }
+                            .frame(height: 60, alignment: .top)
                             
                         } // hstack
                         

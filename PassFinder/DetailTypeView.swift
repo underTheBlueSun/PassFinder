@@ -1,5 +1,5 @@
 //
-//  MyTypeView.swift
+//  DetailTypeView.swift
 //  PassFinder
 //
 //  Created by underTheBlueSun on 2021/12/05.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyTypeView: View {
+struct DetailTypeView: View {
     
     @EnvironmentObject var passFinderModel: PassFinderViewModel
     
@@ -200,8 +200,8 @@ struct MyTypeView: View {
     } // body
 }
 
-struct MyTypeView_Previews: PreviewProvider {
+struct DetailTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        MyTypeView().environmentObject(PassFinderViewModel())
+        DetailTypeView().environmentObject(PassFinderViewModel())
     }
 }

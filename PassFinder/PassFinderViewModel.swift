@@ -14,7 +14,7 @@ class PassFinderViewModel: ObservableObject {
     @Published var selections: [String] = []
     @Published var counts: [String: Int] = [:]
     @Published var myType: String = ""
-    @Published var name: String = ""
+    @Published var name: String = ""        // 다른 사람 이름 입력
     @Published var filteredArray: [Type] = []       // 나의 타입 정보의 배열
     
     func countByTypes() {
