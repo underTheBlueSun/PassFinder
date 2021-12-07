@@ -52,7 +52,7 @@ struct MainTabView: View {
 //              Text("사람들")
           }
         
-        SetUpView()
+        TypeView()
         .tag(3)
         .tabItem {
             Image(systemName: "16.circle.fill")
