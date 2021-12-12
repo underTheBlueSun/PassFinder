@@ -59,15 +59,15 @@ struct DetailTypeView: View {
                             
                             Text("ISTP")
                                 .foregroundColor(.systemTeal)
-                                .font(.system(size: 50, weight: .heavy))
+                                .font(.system(size: 60, weight: .heavy))
                                 .padding(.vertical, 1)
                             
                             Divider().frame(width:110, height: 1).background(Color.white)
                             
             //                Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].title)
-                            Text("잔다르크형")
-                                .foregroundColor(.passFinderItem1)
-                                .font(.system(size: 20, weight: .heavy))
+                            Text("전체 인구중 13%")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15))
                                 .padding(.vertical, 2)
                             
                         } // vstack
