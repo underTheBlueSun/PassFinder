@@ -21,6 +21,12 @@ struct CustomAlertView: View {
                 
                 VStack(spacing: 3)  {
                     
+                    // 유형 이미지
+                    Image(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].image1)
+                        .resizable()
+                        .cornerRadius(10)
+                        .frame(width: 70, height: 80)
+                    
                     // 타입
                     Text(String(passFinderModel.myType))
                         .foregroundColor(.systemTeal)
@@ -36,14 +42,13 @@ struct CustomAlertView: View {
                 } // vstack
                 
                 // 내용
-                ScrollView {
-                    Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].description)
-                        .foregroundColor(.gray)
-                        .padding()
-                        
-                }
-                .frame(width: 300, height: 200)
-                
+//                ScrollView {
+//                    Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].description)
+//                        .foregroundColor(.gray)
+//                        .padding()
+//
+//                }
+//                .frame(width: 300, height: 200)
                 
                 VStack(alignment: .trailing) {
 //                    Spacer()

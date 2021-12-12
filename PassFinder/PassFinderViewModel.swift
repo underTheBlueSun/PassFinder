@@ -83,8 +83,7 @@ class PassFinderViewModel: ObservableObject {
             myType = myType + "P"
         }
         
-        filteredArray = types.filter { $0.type == myType }
-        
+        filteredArray = types.filter { $0.type == myType }  // 나의 유형 객체
         
     } // func countByTypes
     
