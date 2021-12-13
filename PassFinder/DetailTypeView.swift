@@ -220,35 +220,35 @@ struct DetailTypeView: View {
 //                        Text("관련 인물들").foregroundColor(.systemTeal).font(.system(size: 15))
                         HStack {
                             VStack {
-                                Image("머니볼")
+                                Image("빌리빈(머니볼)")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("넬슨만델라").foregroundColor(.white).font(.system(size: 12))
+                                Text("빌리빈(머니볼)").foregroundColor(.white).font(.system(size: 12))
                             }
                             
                             VStack {
-                                Image("빌게이츠")
+                                Image("마틴루터킹")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("클린트이스트우드").foregroundColor(.white).font(.system(size: 12))
+                                Text("빌게이츠").foregroundColor(.white).font(.system(size: 12))
                             }
                             
                             VStack {
-                                Image("넬슨만델라")
+                                Image("잭(캐리비안의해적)")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("넬슨만델라").foregroundColor(.white).font(.system(size: 12))
+                                Text("잭(캐리비안의해적)").foregroundColor(.white).font(.system(size: 12))
                             }
                             
                             VStack {
-                                Image("빌게이츠")
+                                Image("키팅(죽은시인의사회)")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("클린트이스트우드").foregroundColor(.white).font(.system(size: 12))
+                                Text("키팅(죽은시인의사회)").foregroundColor(.white).font(.system(size: 12))
                             }
                             
                         }
