@@ -218,13 +218,13 @@ struct DetailTypeView: View {
                     
                     VStack {
 //                        Text("관련 인물들").foregroundColor(.systemTeal).font(.system(size: 15))
-                        HStack {
+                        HStack(alignment: .top) {
                             VStack {
-                                Image("빌리빈(머니볼)")
+                                Image("머니볼-빌리빈")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("빌리빈(머니볼)").foregroundColor(.white).font(.system(size: 12))
+                                Text("머니볼-빌리빈").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                             }
                             
                             VStack {
@@ -232,23 +232,23 @@ struct DetailTypeView: View {
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("빌게이츠").foregroundColor(.white).font(.system(size: 12))
+                                Text("마틴루터킹").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                             }
                             
                             VStack {
-                                Image("잭(캐리비안의해적)")
+                                Image("캐리비안의해적-잭스패로우")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("잭(캐리비안의해적)").foregroundColor(.white).font(.system(size: 12))
+                                Text("캐리비안의해적-잭스패로우").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                             }
                             
                             VStack {
-                                Image("키팅(죽은시인의사회)")
+                                Image("죽은시인의사회-키팅")
                                     .resizable()
                                     .cornerRadius(10)
                                     .frame(width: 60, height: 70)
-                                Text("키팅(죽은시인의사회)").foregroundColor(.white).font(.system(size: 12))
+                                Text("죽은시인의사회-키팅").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                             }
                             
                         }

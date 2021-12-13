@@ -33,7 +33,7 @@ struct TypeView: View {
                                 .cornerRadius(10)
                                 .frame(width: 70, height: 80)
                             
-                            Text("ESFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                            Text("ENFP").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
                         }
                         
                         VStack(spacing: 0) {
@@ -42,7 +42,7 @@ struct TypeView: View {
                                 .cornerRadius(10)
                                 .frame(width: 70, height: 80)
                             
-                            Text("ESFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                            Text("INFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
                         }
                         
                         VStack(spacing: 0) {
@@ -51,7 +51,7 @@ struct TypeView: View {
                                 .cornerRadius(10)
                                 .frame(width: 70, height: 80)
                             
-                            Text("ESFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                            Text("ISTP").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
                         }
                         
                         
