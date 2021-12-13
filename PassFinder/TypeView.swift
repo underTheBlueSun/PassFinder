@@ -23,15 +23,17 @@ struct TypeView: View {
                         
                         ForEach(types) { type in
                             
-                            VStack(spacing: 0) {
-                                Image(type.image1)
-                                    .resizable()
-                                    .cornerRadius(10)
-                                    .frame(width: 70, height: 80)
+                            NavigationLink(destination: DetailTypeView(type: type.image1)) {
+                                VStack(spacing: 0) {
+                                    Image(type.image1)
+                                        .resizable()
+                                        .cornerRadius(10)
+                                        .frame(width: 70, height: 80)
 
-                                Text(type.image1).foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                                    Text(type.image1).foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                                }
+                                .padding(.vertical, 5)
                             }
-                            .padding(.vertical, 5)
                             
                         }
                         
@@ -50,8 +52,11 @@ struct TypeView: View {
             } // NavigationView
             
             VStack {
-                Text("유형").foregroundColor(.white).font(.system(size: 27, weight: .heavy))
-//                Text("유형을 선택해보자").foregroundColor(.orange).font(.system(size: 15))
+                HStack {
+                    Image(systemName: "16.circle.fill").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                    Text("유형").foregroundColor(.white).font(.system(size: 27, weight: .heavy))
+                }
+                
                 Spacer()
                 
             }

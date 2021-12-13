@@ -38,7 +38,7 @@ struct MainTabView: View {
 //              Text("검사")
              }
         
-        DetailTypeView()
+          PersonDetailTypeView()
           .tag(1)
           .tabItem {
               Image(systemName: "brain.head.profile")

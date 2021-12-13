@@ -14,7 +14,7 @@ struct PersonView: View {
             
             ScrollView {
                 
-                NavigationLink(destination: DetailTypeView()) {
+                NavigationLink(destination: PersonDetailTypeView()) {
                     
                     VStack(spacing:0) {
                         HStack(spacing: 20) {

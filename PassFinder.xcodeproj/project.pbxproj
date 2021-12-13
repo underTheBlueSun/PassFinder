@@ -20,6 +20,7 @@
 		15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */; };
 		15834A56275AECE400625EE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A55275AECE400625EE6 /* Home.swift */; };
 		15834A58275B30B900625EE6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A57275B30B900625EE6 /* CustomAlertView.swift */; };
+		15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */; };
 		FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17A275722EE00583C79 /* MainTabView.swift */; };
 		FA72D17D27572A9800583C79 /* CelebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17C27572A9800583C79 /* CelebView.swift */; };
 		FA72D18127572AC600583C79 /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18027572AC600583C79 /* SetUpView.swift */; };
@@ -49,6 +50,7 @@
 		15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFinderViewModel.swift; sourceTree = "<group>"; };
 		15834A55275AECE400625EE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		15834A57275B30B900625EE6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTypeView.swift; sourceTree = "<group>"; };
 		FA72D17A275722EE00583C79 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FA72D17C27572A9800583C79 /* CelebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebView.swift; sourceTree = "<group>"; };
 		FA72D18027572AC600583C79 /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				157EBA39275C543B001BFB3C /* DetailTypeView.swift */,
 				157EBA3D275E097F001BFB3C /* PersonView.swift */,
 				157EBA43275F70BA001BFB3C /* TypeView.swift */,
+				15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */,
 				FAB1936E274F018800B10E3F /* Example */,
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
 				FAB19366274F018000B10E3F /* Preview Content */,
@@ -233,6 +236,7 @@
 				157EBA3A275C543B001BFB3C /* DetailTypeView.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
 				157EBA3E275E097F001BFB3C /* PersonView.swift in Sources */,
+				15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
 				FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */,
 			);
