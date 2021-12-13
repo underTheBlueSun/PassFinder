@@ -26,7 +26,7 @@ struct DetailTypeView: View {
        arr = str.components(separatedBy: "/")
         
         self.type = type
-        filteredArray = types.filter { $0.type == self.type }  // 나의 유형 객체
+        filteredArray = types.filter { $0.type == self.type }  // 나의 유형 객
         
     }
     
@@ -66,7 +66,7 @@ struct DetailTypeView: View {
                 
                 VStack {
                     
-                    ForEach(arr, id: \.self) { item in
+                    ForEach(filteredArray[0].description.components(separatedBy: "/"), id: \.self) { item in
                         Text(item).foregroundColor(item.contains("✔︎") ? .orange : .white).frame(width: 330, alignment: .leading)
                     }
 
