@@ -22,7 +22,7 @@ struct CustomAlertView: View {
                 VStack(spacing: 3)  {
                     
                     // 유형 이미지
-                    Image(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].image1)
+                    Image(passFinderModel.filteredArray[0].image1)
                         .resizable()
                         .cornerRadius(10)
                         .frame(width: 70, height: 80)
@@ -35,7 +35,7 @@ struct CustomAlertView: View {
                     Divider().frame(width:150).background(Color.gray)
                     
                     // 타이틀
-                    Text(passFinderModel.filteredArray[passFinderModel.filteredArray.startIndex].title)
+                    Text(passFinderModel.filteredArray[0].title)
                         .foregroundColor(.passFinderItem1)
                         .font(.system(size: 18, weight: .heavy))
                     

@@ -8,66 +8,58 @@
 import SwiftUI
 
 struct TypeView: View {
+    
+    var columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 4)
+    
     var body: some View {
         
-        NavigationView {
+        ZStack {
             
-            ScrollView {
+            NavigationView {
                 
-                VStack {
+                ScrollView {
                     
-                    HStack(spacing: 20) {
+                    LazyVGrid(columns: columns, spacing: 30) {
                         
-                        VStack(spacing: 0) {
-                            Image("ESFJ")
-                                .resizable()
-                                .cornerRadius(10)
-                                .frame(width: 70, height: 80)
+                        ForEach(types) { type in
                             
-                            Text("ESFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                            VStack(spacing: 0) {
+                                Image(type.image1)
+                                    .resizable()
+                                    .cornerRadius(10)
+                                    .frame(width: 70, height: 80)
+
+                                Text(type.image1).foregroundColor(.white).font(.system(size: 25, weight: .heavy))
+                            }
+                            .padding(.vertical, 5)
+                            
                         }
                         
-                        VStack(spacing: 0) {
-                            Image("ENFP")
-                                .resizable()
-                                .cornerRadius(10)
-                                .frame(width: 70, height: 80)
-                            
-                            Text("ENFP").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
-                        }
-                        
-                        VStack(spacing: 0) {
-                            Image("INFJ")
-                                .resizable()
-                                .cornerRadius(10)
-                                .frame(width: 70, height: 80)
-                            
-                            Text("INFJ").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
-                        }
-                        
-                        VStack(spacing: 0) {
-                            Image("ISTP")
-                                .resizable()
-                                .cornerRadius(10)
-                                .frame(width: 70, height: 80)
-                            
-                            Text("ISTP").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
-                        }
-                        
-                        
-                        
-                        
-                        
-                    }
-                }
+                    } // LazyVGrid
+
+                    
+                } // ScrollView
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.passFinderBG)
+                .navigationBarTitle("", displayMode: .inline)
+                .navigationBarColor(backgroundColor: UIColor(Color.passFinderBG), tintColor: .white)
                 
-            } // ScrollView
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.passFinderBG)
-            .navigationBarTitle("16 유형", displayMode: .inline)
-            .navigationBarColor(backgroundColor: UIColor(Color.passFinderBG), tintColor: .white)
+                
+                
+                
+            } // NavigationView
             
-        } // NavigationView
+            VStack {
+                Text("유형").foregroundColor(.white).font(.system(size: 27, weight: .heavy))
+//                Text("유형을 선택해보자").foregroundColor(.orange).font(.system(size: 15))
+                Spacer()
+                
+            }
+            .frame(width: 300)
+            
+        }
+        
+        
         
     }
 }
