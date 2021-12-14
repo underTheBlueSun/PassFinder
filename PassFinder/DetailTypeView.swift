@@ -78,35 +78,35 @@ struct DetailTypeView: View {
 //                        Text("관련 인물들").foregroundColor(.systemTeal).font(.system(size: 15))
                     HStack(alignment: .top) {
                         VStack {
-                            Image("머니볼-빌리빈")
+                            Image(filteredArray[0].image2)
                                 .resizable()
                                 .cornerRadius(10)
                                 .frame(width: 60, height: 70)
-                            Text("머니볼-빌리빈").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                            Text(filteredArray[0].image2).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                         }
                         
                         VStack {
-                            Image("마틴루터킹")
+                            Image(filteredArray[0].image3)
                                 .resizable()
                                 .cornerRadius(10)
                                 .frame(width: 60, height: 70)
-                            Text("마틴루터킹").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                            Text(filteredArray[0].image3).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                         }
                         
                         VStack {
-                            Image("캐리비안의해적-잭스패로우")
+                            Image(filteredArray[0].image4)
                                 .resizable()
                                 .cornerRadius(10)
                                 .frame(width: 60, height: 70)
-                            Text("캐리비안의해적-잭스패로우").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                            Text(filteredArray[0].image4).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                         }
                         
                         VStack {
-                            Image("죽은시인의사회-키팅")
+                            Image(filteredArray[0].image5)
                                 .resizable()
                                 .cornerRadius(10)
                                 .frame(width: 60, height: 70)
-                            Text("죽은시인의사회-키팅").foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                            Text(filteredArray[0].image5).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
                         }
                         
                     }
