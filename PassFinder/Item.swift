@@ -31,7 +31,7 @@ var items: [Item] = [
     Item(category: "나의 인지 방식은?", type1: "S01", title1: "구체적,사실적인 책이 잘 읽힌다", type2: "N01", title2: "상상속의 이야기를 다룬 책이 잘 읽힌다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S02", title1: "사람들의 외모,특징을 잘 기억한다", type2: "N02", title2: "사람들의 외모,특징을 잘 기억하지못한다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S03", title1: "꾸준하고 참을성 있다는 말을 듣는 편이다", type2: "N03",  title2: "창의적이고 독창적이란 말을 듣는 편이다", image: "category2"),
-    Item(category: "나의 인지 방식은?", type1: "S04", title1: "시작한 일은 끝을 봐야 직성이 풀린다", type2: "N04", title2: "시작한 일에 끝을 못본 경우가 종종 있다", image: "category2"),
+    Item(category: "나의 인지 방식은?", type1: "S04", title1: "한번 시작한 일은 끝을 보는 편이다", type2: "N04", title2: "중간에 그만두는 경우가 많다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S05", title1: "다양한 생활의 팁을 알려고 노력한다", type2: "N05", title2: "일상생활에 필요한 것들에 무신경하다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S06", title1: "자세한 내용을 잘 암기할 수 있다", type2: "N06",  title2: "부분보다는 전체의 틀이 잘 보인다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S07", title1: "남들이 많이 하는 방법대로 하는게 편하다", type2: "N07", title2: "나만의 방법을 찾는게 편하다", image: "category2"),
@@ -46,17 +46,17 @@ var items: [Item] = [
     Item(category: "나의 판단 방식은?", type1: "T06", title1: "위급상황에 차분하게 대처한 적 있다", type2: "F06",  title2: "위급상황에 항상 우왕좌왕한다", image: "category3"),
     Item(category: "나의 판단 방식은?", type1: "T07", title1: "말을 바로 내뱉는 돌직구스타일 같다", type2: "F07", title2: "상대의 기분을 고려해 말을 고르는 편이다", image: "category3"),
     Item(category: "나의 판단 방식은?", type1: "T08", title1: "논리적으로 설명을 잘하는 편이다", type2: "F08", title2: "이야기에 요점이 없을 때가 있다", image: "category3"),
-    Item(category: "나의 판단 방식은?", type1: "T09", title1: "악당이 당하는 장면을 보면 통쾌하다", type2: "F09",  title2: "악당이지만 그대로 불쌍한 면이 있다", image: "category3"),
+    Item(category: "나의 판단 방식은?", type1: "T09", title1: "악당이 당하는 장면을 보면 통쾌하다", type2: "F09",  title2: "악당이지만 그래도 불쌍한 면이 있다", image: "category3"),
     Item(category: "나의 판단 방식은?", type1: "T10", title1: "결정을 내리는게 어렵지않다", type2: "F10",  title2: "양보를 잘하고 쉽게 결정을 내리지 못한다", image: "category3"),
-    Item(category: "나의 생활 방식은?", type1: "J01", title1: "공부나 일을 먼저 하고 논다", type2: "P01", title2: "먼저 놀고 난 후 공부나 일을 한다", image: "category4"),
+    Item(category: "나의 생활 방식은?", type1: "J01", title1: "항상 공부를 먼저 하고 논다", type2: "P01", title2: "급한 경우가 아니면 놀고난후 공부한다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J02", title1: "시간을 쫓기면서 일 하는게 싫다", type2: "P02", title2: "벼락치기라도 막판에 몰아서 할 수도 있다", image: "category4"),
-    Item(category: "나의 생활 방식은?", type1: "J03", title1: "정리정돈된 깨끗한 방이 좋다", type2: "P03",  title2: "방이 어지러워도 상관없다", image: "category4"),
+    Item(category: "나의 생활 방식은?", type1: "J03", title1: "정리정돈을 먼저 하고 공부를 시작한다", type2: "P03",  title2: "책상이 어지러워도 크게 신경안쓴다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J04", title1: "사전에 계획을 세우는 편이다", type2: "P04", title2: "계획을 짜는 것은 왠지 불편하다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J05", title1: "규칙적인 생활을 하는 편이다", type2: "P05", title2: "상황에 따라 유연하게 행동한다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J06", title1: "준비물을 잘 챙기는 편이다", type2: "P06",  title2: "준비물을 잘 잊어먹는 편이다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J07", title1: "타인의 고민을 빨리 해결해주고싶다", type2: "P07", title2: "타인의 고민에 해결보단 공감해주고싶다", image: "category4"),
-    Item(category: "나의 생활 방식은?", type1: "J08", title1: "나는 약속을 잘지키는 편이다", type2: "P08", title2: "약속에 종종 늦거나 잊은 적도 있다", image: "category4"),
+    Item(category: "나의 인지 방식은?", type1: "J08", title1: "한번 시작한 일은 끝을 보는 편이다", type2: "P08", title2: "중간에 그만두는 경우가 많다", image: "category2"),
     Item(category: "나의 생활 방식은?", type1: "J09", title1: "계획적으로 일하는 편이다", type2: "P09",  title2: "그때그때 일을 해치우는 편이다", image: "category4"),
-    Item(category: "나의 생활 방식은?", type1: "J10", title1: "쇼핑을 쉽게 쉽게 한다", type2: "P10",  title2: "무엇을 고를 지 선택이 어렵다", image: "category4")
+    Item(category: "나의 생활 방식은?", type1: "J10", title1: "쇼핑을 쉽게 쉽게 한다", type2: "P10",  title2: "무엇을 고를 지 결정이 어렵다", image: "category4")
     
 ]
