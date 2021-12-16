@@ -47,6 +47,7 @@ extension Color {
   static let passFinderBG2 = Color(hex: "#555555") // 짙은 회색
   static let passFinderDark = Color(hex: "#2A2C2F") // 연한 검정
   static let passFinderItem1 = Color(hex: "#FC8C04") //주황
+    static let passFinderItemBG = Color(hex: "#2A2C2F") // 연한 검정
 }
 
 extension Color {

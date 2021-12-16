@@ -37,7 +37,7 @@ struct MultiSelectRow: View {
                     
                         
                     Text(title)
-                        .frame(alignment: .leading)
+                        .frame(width: 280, alignment: .leading)
                         .foregroundColor(self.isSelected ? Color.passFinderItem1 : Color.white)
                         .font(.system(size: 17, weight: .heavy))
 //                        .padding(.vertical, 3)
