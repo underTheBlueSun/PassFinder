@@ -21,7 +21,7 @@ struct SetUpView: View {
                     
                     VStack(alignment: .leading) {
                         Text("참고한 곳")
-                            .font(.system(size: 16, weight: .heavy))
+//                            .font(.system(size: 16, weight: .heavy))
                             .foregroundColor(.orange)
                             .padding(.vertical, 1)
                             .padding(.horizontal, 15)
