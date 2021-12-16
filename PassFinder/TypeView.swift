@@ -35,10 +35,14 @@ struct TypeView: View {
                                 .padding(.vertical, 5)
                             }
                             
-                        }
+                        } // foreach
                         
                     } // LazyVGrid
 
+                    Text("Icon made by Pixel perfect from www.flaticon.com")
+                        .font(.system(size: 15))
+                        .foregroundColor(.orange)
+                        .padding()
                     
                 } // ScrollView
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

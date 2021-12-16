@@ -20,43 +20,58 @@ struct SetUpView: View {
                 ScrollView {
                     
                     VStack(alignment: .leading) {
-                        Text("참고한 곳")
-//                            .font(.system(size: 16, weight: .heavy))
-                            .foregroundColor(.orange)
-                            .padding(.vertical, 1)
-                            .padding(.horizontal, 15)
-                        Text("유튜브: 임작가....")
+                        Text("성격에는 좋고 나쁨이 없습니다. \n패스파인더는 재미로 간단히 해보는 간이 성격유형테스트 앱입니다.")
                             .foregroundColor(.white)
-//                            .padding(.vertical, 10)
-                            .padding(.horizontal, 15)
-
-                        Text("아이콘: www.picker.co.rk")
-                            .foregroundColor(.white)
-//                            .padding(.vertical, 10)
-                            .padding(.horizontal, 15)
+                            .padding()
+                    }
+                    .frame(width: 330, height: 100, alignment: .leading)
+                    .background(Color.passFinderItemBG)
+                    .cornerRadius(15)
+//                    .padding()
+                    
+                    
+                    
+                    VStack(alignment: .leading) {
+                        Text("에너지 방향").foregroundColor(.orange).frame(width: 330)
 
                         
+                        VStack(spacing: 0) {
+                            
+                            HStack(spacing: 0) {
+                                Text("E").foregroundColor(.red).font(.system(size: 17, weight: .heavy))
+                                Text("xtraversion").foregroundColor(.white)
+                            }
+                            
+                            Divider().frame(width:100).background(.gray)
+                            Text("외향").foregroundColor(.white)
+
+                        } // VStack
+                        .frame(width: 110, height: 80)
+                        .background(Color.systemTeal)
+                        .cornerRadius(7)
+//                        .padding()
+                        
+                        VStack(spacing: 0) {
+                            
+                            HStack(spacing: 0) {
+                                Text("E").foregroundColor(.red).font(.system(size: 17, weight: .heavy))
+                                Text("xtraversion").foregroundColor(.white)
+                            }
+                            
+                            Divider().frame(width:100).background(.gray)
+                            Text("외향").foregroundColor(.white)
+
+                        } // VStack
+                        .frame(width: 110, height: 80)
+                        .background(Color.systemTeal)
+                        .cornerRadius(7)
+//                        .padding()
+                        
                     }
-                    .frame(width: 300, height: 100, alignment: .leading)
+                    .frame(width: 330, height: 200, alignment: .leading)
                     .background(Color.passFinderItemBG)
                     .cornerRadius(15)
                     .padding()
-                    
-//                    ZStack {
-//
-//                        Rectangle()
-//                            .fill(Color.black).opacity(0.4)
-//                            .frame(width: 330, height: 100)
-//                            .cornerRadius(15)
-//
-//
-//                        Text("aaaa").foregroundColor(.white)
-//
-//                    }
-                    
-                    
-//                    SetUpView
-
                     
                 } // ScrollView
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -72,7 +87,7 @@ struct SetUpView: View {
             VStack {
                 HStack {
                     Image(systemName: "info.circle.fill").foregroundColor(.white).font(.system(size: 25, weight: .heavy))
-                    Text("정보").foregroundColor(.white).font(.system(size: 27, weight: .heavy))
+                    Text("성격의 경향").foregroundColor(.white).font(.system(size: 27, weight: .heavy))
                 }
                 
                 Spacer()
