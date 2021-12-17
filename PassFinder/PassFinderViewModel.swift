@@ -12,9 +12,9 @@ class PassFinderViewModel: ObservableObject {
     @Published var selectedTab: Int = 0     // '나' 또는 '다른사람'으로 저장시 탭 이동
     @Published var customAlert: Bool = false       // '나' 또는 '다른사람'으로 저장시 alert 닫기
     @Published var selections: [String] = []
-    @Published var counts: [String: Int] = [:]
-    @Published var myType: String = ""
-    @Published var name: String = ""        // 다른 사람 이름 입력
+    @Published var counts: [String: Int] = [:]  // [E:9, I:1, ..]
+    @Published var myType: String = ""          // ISFP
+    @Published var othername: String = ""        // 다른 사람 이름
     @Published var filteredArray: [Type] = []       // 나의 타입 정보의 배열
     
     func countByTypes() {

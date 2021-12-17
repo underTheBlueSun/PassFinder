@@ -73,7 +73,7 @@ struct CustomAlertView: View {
                     HStack {
                         
                         
-                        TextField("이름입력..", text: $passFinderModel.name).font(.system(size: 15, weight: .heavy)).frame(width: 100)
+                        TextField("이름입력..", text: $passFinderModel.othername).font(.system(size: 15, weight: .heavy)).frame(width: 100)
     //                    Spacer()
                         Button(action: {
                             
@@ -107,7 +107,7 @@ struct CustomAlertView: View {
             Button(action: {
                 
                 withAnimation {
-                    passFinderModel.name = ""
+                    passFinderModel.othername = ""
                     show.toggle()
                 }
             }) {

@@ -15,7 +15,7 @@ struct MultiSelectRow: View {
     var body: some View {
         Button(action: self.action) {
 
-            ZStack {
+//            ZStack {
                 
                 HStack {
                     
@@ -32,9 +32,7 @@ struct MultiSelectRow: View {
                             
                         }
                         
-                    }
-                    
-                    
+                    } // zstack
                         
                     Text(title)
                         .frame(width: 280, alignment: .leading)
@@ -42,8 +40,8 @@ struct MultiSelectRow: View {
                         .font(.system(size: 17, weight: .heavy))
 //                        .padding(.vertical, 3)
 
-                }
-            } // Zstack
+                } // hstack
+//            } // Zstack
         } // Button
     }
 }

@@ -113,7 +113,7 @@ struct PersonDetailTypeView: View {
 //                    Spacer()
                     
                     VStack(spacing: 0) {
-                        Text("인식기능").foregroundColor(.white).font(.system(size: 15))
+                        Text("정보지각").foregroundColor(.white).font(.system(size: 15))
                         
                         ZStack(alignment: .leading) {
                             
@@ -141,7 +141,7 @@ struct PersonDetailTypeView: View {
 //                Spacer()
                     
                     VStack(spacing: 0) {
-                        Text("판단기능").foregroundColor(.white).font(.system(size: 15))
+                        Text("의사결정").foregroundColor(.white).font(.system(size: 15))
                         
                         ZStack(alignment: .leading) {
                             

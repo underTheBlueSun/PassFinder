@@ -34,6 +34,8 @@
 		FAB19372274F01C100B10E3F /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19371274F01C100B10E3F /* Intro.swift */; };
 		FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */; };
 		FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19377275465B400B10E3F /* MultiSelectRow.swift */; };
+		FAE8BC41276C35FB008D255A /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8BC40276C35FB008D255A /* AddPersonView.swift */; };
+		FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		FAB19371274F01C100B10E3F /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		FAB19377275465B400B10E3F /* MultiSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectRow.swift; sourceTree = "<group>"; };
+		FAE8BC40276C35FB008D255A /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +115,11 @@
 				15834A57275B30B900625EE6 /* CustomAlertView.swift */,
 				156D58D427558A5A003F3A9C /* ItemView.swift */,
 				157EBA39275C543B001BFB3C /* DetailTypeView.swift */,
-				157EBA3D275E097F001BFB3C /* PersonView.swift */,
 				157EBA43275F70BA001BFB3C /* TypeView.swift */,
 				15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */,
+				157EBA3D275E097F001BFB3C /* PersonView.swift */,
+				FAE8BC40276C35FB008D255A /* AddPersonView.swift */,
+				FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */,
 				FA72D18027572AC600583C79 /* SetUpView.swift */,
 				FAB1936E274F018800B10E3F /* Example */,
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
@@ -233,10 +239,12 @@
 				FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */,
 				FA72D18327572EE000583C79 /* ColorExtension.swift in Sources */,
 				156D58D3275587CE003F3A9C /* Item.swift in Sources */,
+				FAE8BC41276C35FB008D255A /* AddPersonView.swift in Sources */,
 				157EBA3A275C543B001BFB3C /* DetailTypeView.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
 				157EBA3E275E097F001BFB3C /* PersonView.swift in Sources */,
 				15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */,
+				FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
 				FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */,
 			);
