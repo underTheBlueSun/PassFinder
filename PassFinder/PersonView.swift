@@ -10,7 +10,7 @@ import SwiftUI
 struct PersonView: View {
     
     @State var openNewPage: Bool = false
-    
+
     var body: some View {
         
         ZStack {
@@ -36,11 +36,11 @@ struct PersonView: View {
                                         .font(.system(size: 30, weight: .heavy))
                                         .padding(.vertical, 1)
                                     
-                                    Divider().frame(width:110, height: 1).background(Color.white)
+                                    Divider().frame(width:100, height: 1).background(Color.white)
                                     
-                                    Text("잔다르크형")
+                                    Text("전체 인구중")
                                         .foregroundColor(.passFinderItem1)
-                                        .font(.system(size: 18, weight: .heavy))
+                                        .font(.system(size: 15))
                                         .padding(.vertical, 2)
                                     
                                 } // vstack
