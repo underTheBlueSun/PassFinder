@@ -20,13 +20,6 @@ struct MainTabView: View {
 //        UITabBar.appearance().backgroundColor = UIColor.blue
     }
     
-//    private enum Tabs {
-//      case item, celeb, job, info, setup
-//    }
-
-//    @State private var selectedTab: Tabs = .item
-//    @State private var selectedTab: Int = 0
-    
   var body: some View {
     
       TabView(selection: $passFinderModel.selectedTab) {
@@ -38,7 +31,7 @@ struct MainTabView: View {
 //              Text("검사")
              }
         
-          PersonDetailTypeView()
+          MeDetailTypeView()
           .tag(1)
           .tabItem {
               Image(systemName: "brain.head.profile")
@@ -66,15 +59,6 @@ struct MainTabView: View {
     //        Text("설정")
             
         }
-
-        
-//      Group {
-//        item
-//        celeb
-//        job
-//        info
-//        setup
-//      }
       
     }
     .accentColor(.systemTeal)
@@ -82,57 +66,6 @@ struct MainTabView: View {
   }
 }
 
-//private extension MainTabView {
-//
-//    var item: some View {
-//        ItemView()
-//            .tag(Tabs.item)
-//            .tabItem {
-//              Image(systemName: "text.badge.checkmark")
-////              Text("검사")
-//             }
-//    }
-//
-//  var celeb: some View {
-//      ItemView()
-//        .tag(Tabs.celeb)
-//        .tabItem {
-//            Image(systemName: "person.2.fill")
-////            Text("유명인")
-//        }
-//
-//  }
-//
-//    var job: some View {
-//        JobView()
-//        .tag(Tabs.job)
-//          .tabItem {
-//              Image(systemName: "briefcase.fill")
-////              Text("직업")
-//          }
-//    }
-//
-//    var info: some View {
-//      SetUpView()
-//      .tag(Tabs.info)
-//      .tabItem {
-//          Image(systemName: "info.circle.fill")
-//  //        Text("설정")
-//      }
-//
-//    }
-//
-//  var setup: some View {
-//    SetUpView()
-//    .tag(Tabs.setup)
-//    .tabItem {
-//        Image(systemName: "gearshape.fill")
-////        Text("설정")
-//    }
-//
-//  }
-//
-//}
 
 struct MainTabView_Previews: PreviewProvider {
   static var previews: some View {

@@ -11,9 +11,7 @@ import SwiftUI
 struct PassFinderApp: App {
     var body: some Scene {
         WindowGroup {
-//            Test3()
-//            ContentView()
-//            MainTabView()
+//            SearchDefaultRealm()
             MainTabView().environmentObject(PassFinderViewModel()).environment(\.colorScheme, .light)
         }
     }

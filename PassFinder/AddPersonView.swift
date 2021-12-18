@@ -22,27 +22,33 @@ struct AddPersonView: View {
             
             VStack {
                 
-                TextField("이름을 입력하세요", text: $passFinderModel.othername)
-                    .textFieldStyle(.roundedBorder)
-                    .font(.system(size: 15, weight: .heavy)).frame(width: 130).padding(.vertical, 30)
-                
-                LazyVGrid(columns: columns, spacing: 10) {
+                // 키보드가 가려서 scroll 함
+                ScrollView {
+                    TextField("이름을 입력하세요", text: $passFinderModel.name)
+                        .textFieldStyle(.roundedBorder)
+                        .font(.system(size: 15, weight: .heavy)).frame(width: 130).padding(.vertical, 30)
                     
-                    ForEach(types) { type in
-                        TypeSelectRow(image: type.image1, isSelected: typeSelections.contains(type.image1)) {
-                            // 체크 안된 라디오버튼 클릭할때
-                            if !typeSelections.contains(type.image1) {
-                                typeSelections.removeAll()
-                                typeSelections.append(type.image1)
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        
+                        ForEach(types) { type in
+                            TypeSelectRow(image: type.image1, isSelected: typeSelections.contains(type.image1)) {
+                                // 체크 안된 라디오버튼 클릭할때
+                                if !typeSelections.contains(type.image1) {
+                                    typeSelections.removeAll()
+                                    typeSelections.append(type.image1)
+                                }
+                                
                             }
                             
-                        }
+                        } // foreach
                         
-                    } // foreach
+                    } // LazyVGrid
                     
-                } // LazyVGrid
+                    Spacer()
+                    
+                }
                 
-                Spacer()
+                
                 
             } // Vstack
             .padding()
@@ -55,7 +61,8 @@ struct AddPersonView: View {
                 HStack {
                     
                     Button(action: {
-                        passFinderModel.othername = ""
+                        passFinderModel.name = ""
+//                        passFinderModel.fetchOther()
                         presentaion.wrappedValue.dismiss()
                     }, label: {
                         Text("취소").font(.system(size: 25, weight: .heavy)).foregroundColor(.orange)
@@ -64,9 +71,12 @@ struct AddPersonView: View {
                     
                     Spacer()
                     
-                    if typeSelections.count == 1 && passFinderModel.othername != "" {
+                    if typeSelections.count == 1 && passFinderModel.name != "" {
                     Button(action: {
-                        
+                        passFinderModel.myType = typeSelections[0]
+                        passFinderModel.saveOther()
+                        passFinderModel.fetchOther()
+                        presentaion.wrappedValue.dismiss()
                     }, label: {
                         Text("저장").font(.system(size: 25, weight: .heavy)).foregroundColor(.orange)
                     })

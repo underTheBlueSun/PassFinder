@@ -6,10 +6,29 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PersonView: View {
     
+    @EnvironmentObject var passFinderModel: PassFinderViewModel
     @State var openNewPage: Bool = false
+    
+    init() {
+       UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().backgroundColor = UIColor(Color.passFinderBG)
+       UITableView.appearance().backgroundColor = UIColor(Color.passFinderBG)
+    }
+    
+    func removeRows(at offsets: IndexSet) {
+//        passFinderModel.persons.remove(atOffsets: offsets)
+        offsets.forEach ({ index in
+            guard let dbRef = try? Realm() else { return }
+            try? dbRef.write {
+                dbRef.delete(passFinderModel.persons[index])
+                passFinderModel.fetchOther()
+                }
+            })
+    }
 
     var body: some View {
         
@@ -17,62 +36,35 @@ struct PersonView: View {
             
             NavigationView {
                 
-                ScrollView {
+                List {
                     
-                    NavigationLink(destination: PersonDetailTypeView()) {
+                    ForEach(passFinderModel.persons, id: \.self) { person in
                         
-                        VStack(spacing:0) {
+                        NavigationLink(destination: PersonDetailTypeView(id: person.id)) {
+                            
                             HStack(spacing: 20) {
                                 
-                                Text("엄민욱")
+                                Text(person.name)
+                                    .frame(width: 130, alignment: .leading)
                                     .foregroundColor(.white)
-                                    .font(.system(size: 40, weight: .heavy))
-                                    .padding()
+                                    .font(.system(size: 30, weight: .heavy))
+                                
+                                Text(person.type)
+                                    .frame(alignment: .trailing)
+                                    .foregroundColor(.systemTeal)
+                                    .font(.system(size: 35, weight: .heavy))
 
-                                VStack(spacing: 0) {
-                                    
-                                    Text("ISTP")
-                                        .foregroundColor(.systemTeal)
-                                        .font(.system(size: 30, weight: .heavy))
-                                        .padding(.vertical, 1)
-                                    
-                                    Divider().frame(width:100, height: 1).background(Color.white)
-                                    
-                                    Text("전체 인구중")
-                                        .foregroundColor(.passFinderItem1)
-                                        .font(.system(size: 15))
-                                        .padding(.vertical, 2)
-                                    
-                                } // vstack
-    //                            .padding()
-                                
-                                Button(action: {
-                                    
-    //                                withAnimation {
-    //                                    passFinderModel.name = ""
-    //                                    show.toggle()
-    //                                }
-                                }) {
-                                    Image(systemName: "xmark.circle.fill")
-                                        .font(.system(size: 18, weight: .bold))
-                                        .foregroundColor(.gray).opacity(0.5)
-                                    
-                                }
-                                .frame(height: 60, alignment: .top)
-                                
                             } // hstack
                             
-                        } // vstack
-                        .frame(width: 340, height: 80)
-                        .background(Color.passFinderDark).opacity(0.8)
-                        .cornerRadius(10)
-                        
-                    } // NavigationLink
+                        } // NavigationLink
+                    } // foreach
+                    .onDelete(perform: removeRows)
+                    .listRowBackground(Color.passFinderItemBG)
 
                 } // scrollview
-                .padding()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.passFinderBG)
+//                .padding()
+//                .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                .background(Color.passFinderBG)
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarColor(backgroundColor: UIColor(Color.passFinderBG), tintColor: .white)
                 .toolbar {
@@ -80,7 +72,7 @@ struct PersonView: View {
                         Button(action: {
                             openNewPage.toggle()
                         }, label: {
-                            Image(systemName: "plus.circle.fill").font(.title2).foregroundColor(.systemTeal)
+                            Image(systemName: "plus.circle.fill").font(.title2).foregroundColor(.orange)
                         })
                     }
                 } // toolbar
@@ -101,15 +93,13 @@ struct PersonView: View {
                 
             }
             .frame(width: 300)
-            
-            
+
+        } // zstack
+        .onAppear() {
+            passFinderModel.fetchOther()
         }
         
-        
-        
-        
-        
-    }
+    } // body
 }
 
 struct PersonView_Previews: PreviewProvider {

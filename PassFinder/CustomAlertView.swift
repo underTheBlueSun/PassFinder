@@ -53,7 +53,9 @@ struct CustomAlertView: View {
                 VStack(alignment: .trailing) {
 //                    Spacer()
                     Button(action: {
-                        
+                        passFinderModel.name = "나"
+                        passFinderModel.isMe = true
+                        passFinderModel.saveMe()
                         passFinderModel.selectedTab = 1
                         passFinderModel.selections.removeAll()
                         passFinderModel.customAlert = false
@@ -73,13 +75,20 @@ struct CustomAlertView: View {
                     HStack {
                         
                         
-                        TextField("이름입력..", text: $passFinderModel.othername).font(.system(size: 15, weight: .heavy)).frame(width: 100)
+                        TextField("다른 사람 입력", text: $passFinderModel.name)
+                            .textFieldStyle(.roundedBorder).font(.system(size: 15, weight: .heavy)).frame(width: 110)
     //                    Spacer()
                         Button(action: {
                             
-                            passFinderModel.selectedTab = 1
-                            passFinderModel.selections.removeAll()
-                            passFinderModel.customAlert = false
+                            if passFinderModel.name != "" {
+                                passFinderModel.isMe = false
+                                passFinderModel.saveOther()
+                                passFinderModel.selectedTab = 2
+                                passFinderModel.selections.removeAll()
+                                passFinderModel.customAlert = false
+                                
+                            }
+                            
                             
                         }) {
                             
@@ -107,7 +116,7 @@ struct CustomAlertView: View {
             Button(action: {
                 
                 withAnimation {
-                    passFinderModel.othername = ""
+                    passFinderModel.name = ""
                     show.toggle()
                 }
             }) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15058287276D6D4400928EB5 /* MeDetailTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15058286276D6D4400928EB5 /* MeDetailTypeView.swift */; };
 		152CDCF0275B476A008C8B98 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDCEF275B476A008C8B98 /* Type.swift */; };
 		156D58C92752254D003F3A9C /* arrCnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58C82752254D003F3A9C /* arrCnt.swift */; };
 		156D58CB2754EB91003F3A9C /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58CA2754EB91003F3A9C /* Test2.swift */; };
@@ -14,13 +15,16 @@
 		156D58D527558A5A003F3A9C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58D427558A5A003F3A9C /* ItemView.swift */; };
 		157EBA3A275C543B001BFB3C /* DetailTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA39275C543B001BFB3C /* DetailTypeView.swift */; };
 		157EBA3C275C61EA001BFB3C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA3B275C61EA001BFB3C /* Person.swift */; };
-		157EBA3E275E097F001BFB3C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA3D275E097F001BFB3C /* PersonView.swift */; };
 		157EBA44275F70BA001BFB3C /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EBA43275F70BA001BFB3C /* TypeView.swift */; };
 		15834A522756DF8400625EE6 /* Test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A512756DF8300625EE6 /* Test3.swift */; };
 		15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */; };
 		15834A56275AECE400625EE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A55275AECE400625EE6 /* Home.swift */; };
 		15834A58275B30B900625EE6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15834A57275B30B900625EE6 /* CustomAlertView.swift */; };
 		15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */; };
+		15A31476276C8B3100BB86F1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 15A31475276C8B3100BB86F1 /* Realm */; };
+		15A31478276C8B3100BB86F1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15A31477276C8B3100BB86F1 /* RealmSwift */; };
+		15A3147A276C93DE00BB86F1 /* SearchDefaultRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */; };
+		15DD261A276DD8DA0021CB26 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD2619276DD8DA0021CB26 /* PersonView.swift */; };
 		FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17A275722EE00583C79 /* MainTabView.swift */; };
 		FA72D17D27572A9800583C79 /* CelebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17C27572A9800583C79 /* CelebView.swift */; };
 		FA72D18127572AC600583C79 /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18027572AC600583C79 /* SetUpView.swift */; };
@@ -39,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15058286276D6D4400928EB5 /* MeDetailTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeDetailTypeView.swift; sourceTree = "<group>"; };
 		152CDCEF275B476A008C8B98 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		156D58C82752254D003F3A9C /* arrCnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrCnt.swift; sourceTree = "<group>"; };
 		156D58CA2754EB91003F3A9C /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
@@ -46,13 +51,14 @@
 		156D58D427558A5A003F3A9C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		157EBA39275C543B001BFB3C /* DetailTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTypeView.swift; sourceTree = "<group>"; };
 		157EBA3B275C61EA001BFB3C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		157EBA3D275E097F001BFB3C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		157EBA43275F70BA001BFB3C /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 		15834A512756DF8300625EE6 /* Test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3.swift; sourceTree = "<group>"; };
 		15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFinderViewModel.swift; sourceTree = "<group>"; };
 		15834A55275AECE400625EE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		15834A57275B30B900625EE6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTypeView.swift; sourceTree = "<group>"; };
+		15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDefaultRealm.swift; sourceTree = "<group>"; };
+		15DD2619276DD8DA0021CB26 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		FA72D17A275722EE00583C79 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FA72D17C27572A9800583C79 /* CelebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebView.swift; sourceTree = "<group>"; };
 		FA72D18027572AC600583C79 /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A31478276C8B3100BB86F1 /* RealmSwift in Frameworks */,
+				15A31476276C8B3100BB86F1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,19 +119,21 @@
 				FA72D18227572EE000583C79 /* ColorExtension.swift */,
 				FA72D18427573FA900583C79 /* NavigationBarColor.swift */,
 				FAB19362274F017800B10E3F /* ContentView.swift */,
-				15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */,
 				15834A57275B30B900625EE6 /* CustomAlertView.swift */,
 				156D58D427558A5A003F3A9C /* ItemView.swift */,
-				157EBA39275C543B001BFB3C /* DetailTypeView.swift */,
 				157EBA43275F70BA001BFB3C /* TypeView.swift */,
+				15834A53275AE94C00625EE6 /* PassFinderViewModel.swift */,
+				157EBA39275C543B001BFB3C /* DetailTypeView.swift */,
+				15DD2619276DD8DA0021CB26 /* PersonView.swift */,
 				15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */,
-				157EBA3D275E097F001BFB3C /* PersonView.swift */,
+				15058286276D6D4400928EB5 /* MeDetailTypeView.swift */,
 				FAE8BC40276C35FB008D255A /* AddPersonView.swift */,
 				FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */,
 				FA72D18027572AC600583C79 /* SetUpView.swift */,
 				FAB1936E274F018800B10E3F /* Example */,
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
 				FAB19366274F018000B10E3F /* Preview Content */,
+				15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */,
 			);
 			path = PassFinder;
 			sourceTree = "<group>";
@@ -166,6 +176,10 @@
 			dependencies = (
 			);
 			name = PassFinder;
+			packageProductDependencies = (
+				15A31475276C8B3100BB86F1 /* Realm */,
+				15A31477276C8B3100BB86F1 /* RealmSwift */,
+			);
 			productName = PassFinder;
 			productReference = FAB1935D274F017800B10E3F /* PassFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +208,9 @@
 				Base,
 			);
 			mainGroup = FAB19354274F017800B10E3F;
+			packageReferences = (
+				15A31474276C8B3100BB86F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = FAB1935E274F017800B10E3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,9 +240,11 @@
 				FAB19363274F017800B10E3F /* ContentView.swift in Sources */,
 				15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */,
 				FAB19370274F01A300B10E3F /* OffsetPageTabView_Home.swift in Sources */,
+				15A3147A276C93DE00BB86F1 /* SearchDefaultRealm.swift in Sources */,
 				156D58D527558A5A003F3A9C /* ItemView.swift in Sources */,
 				FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */,
 				FA72D18527573FA900583C79 /* NavigationBarColor.swift in Sources */,
+				15058287276D6D4400928EB5 /* MeDetailTypeView.swift in Sources */,
 				157EBA44275F70BA001BFB3C /* TypeView.swift in Sources */,
 				156D58CB2754EB91003F3A9C /* Test2.swift in Sources */,
 				FA72D17D27572A9800583C79 /* CelebView.swift in Sources */,
@@ -242,11 +261,11 @@
 				FAE8BC41276C35FB008D255A /* AddPersonView.swift in Sources */,
 				157EBA3A275C543B001BFB3C /* DetailTypeView.swift in Sources */,
 				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
-				157EBA3E275E097F001BFB3C /* PersonView.swift in Sources */,
 				15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */,
 				FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
 				FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */,
+				15DD261A276DD8DA0021CB26 /* PersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +468,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15A31474276C8B3100BB86F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15A31475276C8B3100BB86F1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15A31474276C8B3100BB86F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		15A31477276C8B3100BB86F1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15A31474276C8B3100BB86F1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAB19355274F017800B10E3F /* Project object */;
 }

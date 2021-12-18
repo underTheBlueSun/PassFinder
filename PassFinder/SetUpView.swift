@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SetUpView: View {
     
+    @EnvironmentObject var passFinderModel: PassFinderViewModel
+    
     var body: some View {
         
         ZStack {
@@ -19,13 +21,19 @@ struct SetUpView: View {
                 
                 ScrollView {
                     
+//                    Button(action: {
+//                        passFinderModel.deleteData()
+//                    }, label: {
+//                        Text("전부삭제")
+//                    })
+                    
                     VStack(alignment: .leading) {
-                        Text("패스파인더는 재미로 간단히 해보는 간이 성격유형테스트 앱입니다. \n성격에는 좋고 나쁨이 없습니다. 검사를 통해 자신의 가능성에 한계를 짓거나 타인에게 거리를 두는 것은 현명한 선택이 아닙니다. \n정확한 검사를 위해선 심리센터나 정식 MBTI검사를 받길 바랍니다.")
+                        Text("패스파인더는 재미로 간단히 해보는 간이 성격유형 테스트 앱입니다. 성격에는 좋고 나쁨이 없습니다. 검사로 자신의 가능성에 한계를 짓거나 타인에게 거리를 두는 것은 현명한 선택이 아닙니다. \n정확한 검사를 위해선 심리센터나 정식 MBTI검사를 받길 바랍니다.")
                             .font(.system(size: 15))
                             .foregroundColor(.white)
                             .padding()
                     }
-                    .frame(width: 330, height: 160, alignment: .leading)
+                    .frame(width: 330, height: 150, alignment: .leading)
                     .background(Color.passFinderItemBG)
                     .cornerRadius(15)
 //                    .padding()
