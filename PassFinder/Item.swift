@@ -18,7 +18,7 @@ struct Item: Identifiable {
 }
 
 var items: [Item] = [
-    Item(category: "나의 에너지 방향은?", type1: "E01", title1: "여러 친구들과 두루두루 친하다", type2: "I01", title2: "몇 명의 친구들과 깊게 친하다", image: "category1"),
+    Item(category: "나의 에너지 방향은?", type1: "E01", title1: "낯선 환경에서 자기소개시간이 재미있다", type2: "I01", title2: "낯선 환경에서 자기소개시간이 불편하다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E02", title1: "낯선 사람과 같이 있어도 괜찮다", type2: "I02", title2: "낯선 사람과 같이 있으면 부담스럽다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E03", title1: "말이 많은 편이다", type2: "I03",  title2: "누가 먼저 말을 걸어야 말을 하는 편이다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E04", title1: "생각이 바로 밖으로 표현된다", type2: "I04", title2: "혼자만의 생각에 빠질때가 종종 있다", image: "category1"),
@@ -27,7 +27,7 @@ var items: [Item] = [
     Item(category: "나의 에너지 방향은?", type1: "E07", title1: "많은 친구들에게 이야기하는게 좋다", type2: "I07", title2: "친한 친구에게만 이야기하는게 좋다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E08", title1: "여럿이 같이 하면 일이나 공부가 잘된다", type2: "I08", title2: "일이나 공부는 혼자 하는게 더 잘된다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E09", title1: "독서보다 사람 만나는게 좋다", type2: "I09",  title2: "사람 만나는 것보다 독서가 더 좋다", image: "category1"),
-    Item(category: "나의 에너지 방향은?", type1: "E10", title1: "낯선 환경에서 자기소개시간이 재미있다", type2: "I10",  title2: "낯선 환경에서 자기소개시간이 불편하다", image: "category1"),
+    Item(category: "나의 에너지 방향은?", type1: "E10", title1: "여러 친구들과 두루두루 친하다", type2: "I10",  title2: "몇 명의 친구들과 깊게 친하다", image: "category1"),
     Item(category: "나의 인지 방식은?", type1: "S01", title1: "현실적, 사실적인 책을 주로 읽는다", type2: "N01", title2: "상상력에 기반한 책을 주로 읽는다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S02", title1: "사람들의 외모,특징을 잘 기억한다", type2: "N02", title2: "사람들의 외모,특징을 잘 기억하지못한다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S03", title1: "꾸준하고 참을성 있다는 말을 듣는 편이다", type2: "N03",  title2: "창의적이고 독창적이란 말을 듣는 편이다", image: "category2"),
