@@ -96,9 +96,9 @@ struct AddPersonView: View {
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.passFinderBG)
-        
-        
-      
+        .onDisappear() {
+            passFinderModel.fetchOther()
+        }
         
     }
 }
