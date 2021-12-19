@@ -104,7 +104,7 @@ struct SetUpView: View {
                             Text("hinking (사고)").foregroundColor(.orange).font(.system(size: 17))
                         }
                         .padding(.horizontal, 10)
-                        Text("합리적, 논리적, 객관적 사고를 통한 의사결정").frame(width: 300, alignment: .leading)
+                        Text("합리적, 논리적, 객관적 사고를 통한 의사결정. \n지향하는 가치는 진실과 사실").frame(width: 300, alignment: .leading)
                             .foregroundColor(.white).padding(.horizontal, 17).font(.system(size: 15))
                         
                         Spacer().frame(height: 5)
@@ -115,10 +115,10 @@ struct SetUpView: View {
                             Text("eeling (감정)").foregroundColor(.orange).font(.system(size: 17))
                         }
                         .padding(.horizontal, 10)
-                        Text("개인적, 주관적, 사람과의 관계를 통한 의사결정").frame(width: 300, alignment: .leading).foregroundColor(.white).padding(.horizontal, 17).font(.system(size: 15))
+                        Text("개인적, 주관적, 사람과의 관계를 통한 의사결정. 지향하는 가치는 선(착함)").frame(width: 300, alignment: .leading).foregroundColor(.white).padding(.horizontal, 17).font(.system(size: 15))
                         
                     }
-                    .frame(width: 330, height: 135, alignment: .leading)
+                    .frame(width: 330, height: 160, alignment: .leading)
                     .background(Color.passFinderItemBG)
                     .cornerRadius(15)
                     

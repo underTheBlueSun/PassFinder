@@ -79,7 +79,7 @@ struct PersonView: View {
                 
             } // NavigationView
             .fullScreenCover(isPresented: $openNewPage) {
-                AddPersonView()
+                AddPersonView().environment(\.colorScheme, .light)
 //                Text("aaa")
             }
             

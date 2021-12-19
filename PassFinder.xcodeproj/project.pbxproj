@@ -24,7 +24,9 @@
 		15A31476276C8B3100BB86F1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 15A31475276C8B3100BB86F1 /* Realm */; };
 		15A31478276C8B3100BB86F1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15A31477276C8B3100BB86F1 /* RealmSwift */; };
 		15A3147A276C93DE00BB86F1 /* SearchDefaultRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */; };
+		15C74CEA276EB7A2005F5DB2 /* Test111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C74CE9276EB7A2005F5DB2 /* Test111.swift */; };
 		15DD261A276DD8DA0021CB26 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD2619276DD8DA0021CB26 /* PersonView.swift */; };
+		15DD261C276EAC0D0021CB26 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD261B276EAC0D0021CB26 /* Test1.swift */; };
 		FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17A275722EE00583C79 /* MainTabView.swift */; };
 		FA72D17D27572A9800583C79 /* CelebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D17C27572A9800583C79 /* CelebView.swift */; };
 		FA72D18127572AC600583C79 /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18027572AC600583C79 /* SetUpView.swift */; };
@@ -58,7 +60,9 @@
 		15834A57275B30B900625EE6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		15A314722767FD6100BB86F1 /* PersonDetailTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTypeView.swift; sourceTree = "<group>"; };
 		15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDefaultRealm.swift; sourceTree = "<group>"; };
+		15C74CE9276EB7A2005F5DB2 /* Test111.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test111.swift; sourceTree = "<group>"; };
 		15DD2619276DD8DA0021CB26 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		15DD261B276EAC0D0021CB26 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
 		FA72D17A275722EE00583C79 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FA72D17C27572A9800583C79 /* CelebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebView.swift; sourceTree = "<group>"; };
 		FA72D18027572AC600583C79 /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				FAB19364274F018000B10E3F /* Assets.xcassets */,
 				FAB19366274F018000B10E3F /* Preview Content */,
 				15A31479276C93DE00BB86F1 /* SearchDefaultRealm.swift */,
+				15DD261B276EAC0D0021CB26 /* Test1.swift */,
+				15C74CE9276EB7A2005F5DB2 /* Test111.swift */,
 			);
 			path = PassFinder;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */,
 				FA72D18527573FA900583C79 /* NavigationBarColor.swift in Sources */,
 				15058287276D6D4400928EB5 /* MeDetailTypeView.swift in Sources */,
+				15C74CEA276EB7A2005F5DB2 /* Test111.swift in Sources */,
 				157EBA44275F70BA001BFB3C /* TypeView.swift in Sources */,
 				156D58CB2754EB91003F3A9C /* Test2.swift in Sources */,
 				FA72D17D27572A9800583C79 /* CelebView.swift in Sources */,
@@ -264,6 +271,7 @@
 				15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */,
 				FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
+				15DD261C276EAC0D0021CB26 /* Test1.swift in Sources */,
 				FA72D17B275722EE00583C79 /* MainTabView.swift in Sources */,
 				15DD261A276DD8DA0021CB26 /* PersonView.swift in Sources */,
 			);
