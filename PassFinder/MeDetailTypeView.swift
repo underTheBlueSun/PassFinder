@@ -89,9 +89,11 @@ struct MeDetailTypeView: View {
                             } // else
                             
                             HStack {
-                                Text("외향").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+//                                Text("외향").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("외향(" + String((passFinderModel.eCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                                 Spacer()
-                                Text("내향").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+//                                Text("내향").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("내향(" + String((passFinderModel.iCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                             }
                         }
                         
@@ -125,9 +127,9 @@ struct MeDetailTypeView: View {
                             } // else
                             
                             HStack {
-                                Text("감각").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("감각(" + String((passFinderModel.sCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                                 Spacer()
-                                Text("직관").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("직관(" + String((passFinderModel.nCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                             }
                         }
                         
@@ -157,9 +159,9 @@ struct MeDetailTypeView: View {
                             } // else
                             
                             HStack {
-                                Text("사고").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("사고(" + String((passFinderModel.tCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                                 Spacer()
-                                Text("감정").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("감정(" + String((passFinderModel.fCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                             }
                         }
                         
@@ -191,9 +193,9 @@ struct MeDetailTypeView: View {
                             } // else
                             
                             HStack {
-                                Text("판단").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("판단(" + String((passFinderModel.jCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                                 Spacer()
-                                Text("인식").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
+                                Text("인식(" + String((passFinderModel.pCnt * 100) / 10) + "%)").foregroundColor(.white).padding(.horizontal, 20).font(.system(size: 15))
                             }
                             
                         }

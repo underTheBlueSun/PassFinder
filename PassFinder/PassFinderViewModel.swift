@@ -39,6 +39,10 @@ class PassFinderViewModel: ObservableObject {
     @Published var image3: String = ""
     @Published var image4: String = ""
     @Published var image5: String = ""
+    @Published var image6: String = ""
+    @Published var image7: String = ""
+    @Published var image8: String = ""
+    @Published var image9: String = ""
     @Published var percent: String = ""
     
     func countByTypes() {
@@ -153,6 +157,10 @@ class PassFinderViewModel: ObservableObject {
             self.image3 = self.filteredArray[0].image3
             self.image4 = self.filteredArray[0].image4
             self.image5 = self.filteredArray[0].image5
+            self.image6 = self.filteredArray[0].image6
+            self.image7 = self.filteredArray[0].image7
+            self.image8 = self.filteredArray[0].image8
+            self.image9 = self.filteredArray[0].image9
             self.percent = self.filteredArray[0].percent
             
         }
@@ -203,6 +211,10 @@ class PassFinderViewModel: ObservableObject {
         self.image3 = self.filteredArray[0].image3
         self.image4 = self.filteredArray[0].image4
         self.image5 = self.filteredArray[0].image5
+        self.image6 = self.filteredArray[0].image6
+        self.image7 = self.filteredArray[0].image7
+        self.image8 = self.filteredArray[0].image8
+        self.image9 = self.filteredArray[0].image9
         self.percent = self.filteredArray[0].percent
 
     }
@@ -216,6 +228,11 @@ class PassFinderViewModel: ObservableObject {
         image3 = filteredArray[0].image3
         image4 = filteredArray[0].image4
         image5 = filteredArray[0].image5
+        image6 = filteredArray[0].image6
+        image7 = filteredArray[0].image7
+        image8 = filteredArray[0].image8
+        image9 = filteredArray[0].image9
+        
         percent = filteredArray[0].percent
     }
     
