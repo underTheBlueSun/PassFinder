@@ -137,18 +137,6 @@ class PassFinderViewModel: ObservableObject {
             self.jCnt = self.persons[0].jCnt
             self.pCnt = self.persons[0].pCnt
                 
-        //        guard let person = dbRef.objects(Person.self).filter("isMe == true").first else { return }
-        //
-        //        self.myType = person.type
-        //        self.eCnt = person.eCnt
-        //        self.iCnt = person.iCnt
-        //        self.sCnt = person.sCnt
-        //        self.nCnt = person.nCnt
-        //        self.tCnt = person.tCnt
-        //        self.fCnt = person.fCnt
-        //        self.jCnt = person.jCnt
-        //        self.pCnt = person.pCnt
-                
             self.filteredArray = types.filter { $0.type == self.myType }  // 나의 유형 객체
             self.title = self.filteredArray[0].title
             self.description = self.filteredArray[0].description
@@ -163,7 +151,9 @@ class PassFinderViewModel: ObservableObject {
             self.image9 = self.filteredArray[0].image9
             self.percent = self.filteredArray[0].percent
             
-        }
+            self.isSaveMe = true
+            
+        } // else
 
         
     }
