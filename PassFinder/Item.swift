@@ -53,7 +53,7 @@ var items: [Item] = [
     Item(category: "나의 생활 방식은?", type1: "J03", title1: "정리정돈을 먼저 하고 공부를 시작한다", type2: "P03",  title2: "책상이 어지러워도 크게 신경안쓴다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J04", title1: "계획을 철저하게 세우는 편이다", type2: "P04", title2: "계획은 대충 세우고 상황게 맞게 대처한다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J05", title1: "규칙적인 생활하는게 좋다", type2: "P05", title2: "상황에 따라 유연하게 행동하는게 좋다", image: "category4"),
-    Item(category: "나의 생활 방식은?", type1: "J06", title1: "준비물을 잘 챙기는 편이다", type2: "P06",  title2: "준비물을 잘 잊어먹는 편이다", image: "category4"),
+    Item(category: "나의 생활 방식은?", type1: "J06", title1: "사용한 물건은 제자리에 둔다", type2: "P06",  title2: "물건을 제자리에 안두는 경우가 많다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J07", title1: "타인의 고민을 빨리 해결해주고싶다", type2: "P07", title2: "타인의 고민에 해결보단 공감해주고싶다", image: "category4"),
     Item(category: "나의 인지 방식은?", type1: "J08", title1: "한번 시작한 일은 끝을 보는 편이다", type2: "P08", title2: "중간에 그만두는 경우가 많다", image: "category2"),
     Item(category: "나의 생활 방식은?", type1: "J09", title1: "위급상황에 남들보다 차분하게 대처한다", type2: "P09",  title2: "위급상황에 항상 우왕좌왕한다", image: "category4"),
