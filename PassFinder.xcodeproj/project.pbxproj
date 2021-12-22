@@ -32,7 +32,6 @@
 		FA72D18127572AC600583C79 /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18027572AC600583C79 /* SetUpView.swift */; };
 		FA72D18327572EE000583C79 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18227572EE000583C79 /* ColorExtension.swift */; };
 		FA72D18527573FA900583C79 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72D18427573FA900583C79 /* NavigationBarColor.swift */; };
-		FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19360274F017800B10E3F /* PassFinderApp.swift */; };
 		FAB19363274F017800B10E3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19362274F017800B10E3F /* ContentView.swift */; };
 		FAB19365274F018000B10E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB19364274F018000B10E3F /* Assets.xcassets */; };
 		FAB19368274F018000B10E3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB19367274F018000B10E3F /* Preview Assets.xcassets */; };
@@ -40,6 +39,7 @@
 		FAB19372274F01C100B10E3F /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19371274F01C100B10E3F /* Intro.swift */; };
 		FAB19374274F0E7400B10E3F /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */; };
 		FAB19378275465B400B10E3F /* MultiSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19377275465B400B10E3F /* MultiSelectRow.swift */; };
+		FACA05942772C0E700352D09 /* PassFinder App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA05932772C0E700352D09 /* PassFinder App.swift */; };
 		FAE8BC41276C35FB008D255A /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8BC40276C35FB008D255A /* AddPersonView.swift */; };
 		FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +69,6 @@
 		FA72D18227572EE000583C79 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		FA72D18427573FA900583C79 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		FAB1935D274F017800B10E3F /* PassFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB19360274F017800B10E3F /* PassFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFinderApp.swift; sourceTree = "<group>"; };
 		FAB19362274F017800B10E3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB19364274F018000B10E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB19367274F018000B10E3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		FAB19371274F01C100B10E3F /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		FAB19373274F0E7400B10E3F /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		FAB19377275465B400B10E3F /* MultiSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectRow.swift; sourceTree = "<group>"; };
+		FACA05932772C0E700352D09 /* PassFinder App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PassFinder App.swift"; sourceTree = "<group>"; };
 		FAE8BC40276C35FB008D255A /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		FAE8BC42276C3B51008D255A /* TypeSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +113,7 @@
 		FAB1935F274F017800B10E3F /* PassFinder */ = {
 			isa = PBXGroup;
 			children = (
-				FAB19360274F017800B10E3F /* PassFinderApp.swift */,
+				FACA05932772C0E700352D09 /* PassFinder App.swift */,
 				FA72D17A275722EE00583C79 /* MainTabView.swift */,
 				156D58D2275587CE003F3A9C /* Item.swift */,
 				152CDCEF275B476A008C8B98 /* Type.swift */,
@@ -245,6 +245,7 @@
 			files = (
 				FAB19363274F017800B10E3F /* ContentView.swift in Sources */,
 				15834A54275AE94C00625EE6 /* PassFinderViewModel.swift in Sources */,
+				FACA05942772C0E700352D09 /* PassFinder App.swift in Sources */,
 				FAB19370274F01A300B10E3F /* OffsetPageTabView_Home.swift in Sources */,
 				15A3147A276C93DE00BB86F1 /* SearchDefaultRealm.swift in Sources */,
 				156D58D527558A5A003F3A9C /* ItemView.swift in Sources */,
@@ -267,7 +268,6 @@
 				156D58D3275587CE003F3A9C /* Item.swift in Sources */,
 				FAE8BC41276C35FB008D255A /* AddPersonView.swift in Sources */,
 				157EBA3A275C543B001BFB3C /* DetailTypeView.swift in Sources */,
-				FAB19361274F017800B10E3F /* PassFinderApp.swift in Sources */,
 				15A314732767FD6100BB86F1 /* PersonDetailTypeView.swift in Sources */,
 				FAE8BC43276C3B51008D255A /* TypeSelectRow.swift in Sources */,
 				156D58C92752254D003F3A9C /* arrCnt.swift in Sources */,
@@ -417,8 +417,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI-test.PassFinder";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.-Camino";
+				PRODUCT_NAME = PassFinder;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -446,8 +446,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI-test.PassFinder";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.-Camino";
+				PRODUCT_NAME = PassFinder;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
