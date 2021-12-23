@@ -239,8 +239,43 @@ struct PersonDetailTypeView: View {
                         }
                         
                     }
+                    
+                    HStack {
+                        
+                        VStack {
+                            Image(passFinderModel.image6)
+                                .resizable()
+                                .cornerRadius(10)
+                                .frame(width: 60, height: 70)
+                            Text(passFinderModel.image6).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                        }
+
+                        VStack {
+                            Image(passFinderModel.image7)
+                                .resizable()
+                                .cornerRadius(10)
+                                .frame(width: 60, height: 70)
+                            Text(passFinderModel.image7).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                        }
+
+                        VStack {
+                            Image(passFinderModel.image8)
+                                .resizable()
+                                .cornerRadius(10)
+                                .frame(width: 60, height: 70)
+                            Text(passFinderModel.image8).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                        }
+
+                        VStack {
+                            Image(passFinderModel.image9)
+                                .resizable()
+                                .cornerRadius(10)
+                                .frame(width: 60, height: 70)
+                            Text(passFinderModel.image9).foregroundColor(.white).font(.system(size: 12)).frame(width: 70)
+                        }
+                    }
                 } // vstack
-                .frame(width: 340, height: 150)
+                .frame(width: 340, height: 230)
                 .background(Color.passFinderDark).opacity(0.8)
                 .cornerRadius(10)
               
