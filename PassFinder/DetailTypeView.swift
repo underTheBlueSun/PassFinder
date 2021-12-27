@@ -64,7 +64,8 @@ struct DetailTypeView: View {
 
                 }
                 .padding()
-
+                
+                // 인물들
                 VStack {
 //                        Text("관련 인물들").foregroundColor(.systemTeal).font(.system(size: 15))
                     HStack(alignment: .top) {
@@ -141,7 +142,16 @@ struct DetailTypeView: View {
                 .background(Color.passFinderDark).opacity(0.8)
                 .cornerRadius(10)
                 
-                
+                // 인물들
+                VStack {
+                    
+                    Text("교사, 의사, 변호사, 판사").font(.system(size: 15, weight: .heavy))
+                    
+                } // vstack
+                .frame(width: 340, height: 100)
+                .background(Color.passFinderDark).opacity(0.8)
+                .cornerRadius(10)
+                .padding()
 
 //                Spacer()
 
