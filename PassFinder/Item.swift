@@ -28,7 +28,7 @@ var items: [Item] = [
     Item(category: "나의 에너지 방향은?", type1: "E08", title1: "여럿이 같이 하면 일이나 공부가 잘된다", type2: "I08", title2: "일이나 공부는 혼자 하는게 더 잘된다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E09", title1: "내가 먼저 전화하거나 약속을 잡는 편이다", type2: "I09",  title2: "먼저 전화하거나 약속을 잡지 않는 편이다", image: "category1"),
     Item(category: "나의 에너지 방향은?", type1: "E10", title1: "여러 친구들과 두루두루 친하다", type2: "I10",  title2: "몇 명의 친구들과 깊게 친하다", image: "category1"),
-    Item(category: "나의 인지 방식은?", type1: "S01", title1: "현실적,사실적인 책,영화가 좋다", type2: "N01", title2: "상상력에 기반한 책,영화가 좋다", image: "category2"),
+    Item(category: "나의 인지 방식은?", type1: "S01", title1: "트렌드,유행등에 관심이 많다", type2: "N01", title2: "트렌드,유행등에 별로 관심이 없다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S02", title1: "사람들의 외모,특징을 잘 기억한다", type2: "N02", title2: "사람들의 외모,특징을 잘 기억하지못한다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S03", title1: "꾸준하고 참을성 있다는 말을 듣는 편이다", type2: "N03",  title2: "창의적이고 독창적이란 말을 듣는 편이다", image: "category2"),
     Item(category: "나의 인지 방식은?", type1: "S04", title1: "아이디어는 주로 다른 사람이 제시한다", type2: "N04", title2: "사람들에게 아이디어를 자주 제시한다", image: "category2"),
@@ -47,7 +47,7 @@ var items: [Item] = [
     Item(category: "나의 판단 방식은?", type1: "T07", title1: "말을 바로 내뱉는 돌직구스타일 같다", type2: "F07", title2: "상대의 기분을 고려해 말을 고르는 편이다", image: "category3"),
     Item(category: "나의 판단 방식은?", type1: "T08", title1: "논리적으로 설명을 잘하는 편이다", type2: "F08", title2: "이야기에 요점이 없을 때가 있다", image: "category3"),
     Item(category: "나의 판단 방식은?", type1: "T09", title1: "불치병에 걸린 가족에게 솔직하게 말을 해서 인생을 정리할 시간을 준다", type2: "F09",  title2: "절망할 모습을 생각하니 차마 말할 수 없다", image: "category3"),
-    Item(category: "나의 판단 방식은?", type1: "T10", title1: "결정을 내리는게 어렵지않다", type2: "F10",  title2: "양보를 잘하고 쉽게 결정을 내리지 못한다", image: "category3"),
+    Item(category: "나의 판단 방식은?", type1: "T10", title1: "단정하고 몸에 꼭 맞는 옷을 선호한다", type2: "F10",  title2: "몸이 편한 헐렁하고 간편한 복장이 좋다", image: "category3"),
     Item(category: "나의 생활 방식은?", type1: "J01", title1: "항상 공부를 먼저 하고 논다", type2: "P01", title2: "급한 경우가 아니면 놀고난후 공부한다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J02", title1: "시간을 쫓기면서 일 하는게 싫다", type2: "P02", title2: "벼락치기라도 막판에 몰아서 할 수도 있다", image: "category4"),
     Item(category: "나의 생활 방식은?", type1: "J03", title1: "정리정돈을 먼저 하고 공부를 시작한다", type2: "P03",  title2: "책상이 어지러워도 크게 신경안쓴다", image: "category4"),
@@ -57,6 +57,6 @@ var items: [Item] = [
     Item(category: "나의 생활 방식은?", type1: "J07", title1: "타인의 고민을 빨리 해결해주고싶다", type2: "P07", title2: "타인의 고민에 해결보단 공감해주고싶다", image: "category4"),
     Item(category: "나의 인지 방식은?", type1: "J08", title1: "한번 시작한 일은 끝을 보는 편이다", type2: "P08", title2: "중간에 그만두는 경우가 많다", image: "category2"),
     Item(category: "나의 생활 방식은?", type1: "J09", title1: "위급상황에 남들보다 차분하게 대처한다", type2: "P09",  title2: "위급상황에 항상 우왕좌왕한다", image: "category4"),
-    Item(category: "나의 생활 방식은?", type1: "J10", title1: "쇼핑을 쉽게 쉽게 한다", type2: "P10",  title2: "무엇을 고를 지 결정이 어렵다", image: "category4")
+    Item(category: "나의 생활 방식은?", type1: "J10", title1: "물건 고르는게 어렵지않다", type2: "P10",  title2: "무엇을 고를 지 결정이 어렵다", image: "category4")
     
 ]
