@@ -142,13 +142,16 @@ struct DetailTypeView: View {
                 .background(Color.passFinderDark).opacity(0.8)
                 .cornerRadius(10)
                 
-                // 인물들
+                // 직업
                 VStack {
                     
-                    Text("교사, 의사, 변호사, 판사").font(.system(size: 15, weight: .heavy))
+                    Text(passFinderModel.job)
+                        .foregroundColor(.white)
+                        .font(.system(size: 15, weight: .heavy))
+                        .padding()
                     
                 } // vstack
-                .frame(width: 340, height: 100)
+                .frame(width: 340, height: 80)
                 .background(Color.passFinderDark).opacity(0.8)
                 .cornerRadius(10)
                 .padding()

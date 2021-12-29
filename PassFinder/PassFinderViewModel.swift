@@ -44,6 +44,7 @@ class PassFinderViewModel: ObservableObject {
     @Published var image8: String = ""
     @Published var image9: String = ""
     @Published var percent: String = ""
+    @Published var job: String = ""
     
     func countByTypes() {
         
@@ -150,6 +151,7 @@ class PassFinderViewModel: ObservableObject {
             self.image8 = self.filteredArray[0].image8
             self.image9 = self.filteredArray[0].image9
             self.percent = self.filteredArray[0].percent
+            self.job = self.filteredArray[0].job
             
             self.isSaveMe = true
             
@@ -206,6 +208,7 @@ class PassFinderViewModel: ObservableObject {
         self.image8 = self.filteredArray[0].image8
         self.image9 = self.filteredArray[0].image9
         self.percent = self.filteredArray[0].percent
+        self.job = self.filteredArray[0].job
 
     }
     
@@ -222,8 +225,9 @@ class PassFinderViewModel: ObservableObject {
         image7 = filteredArray[0].image7
         image8 = filteredArray[0].image8
         image9 = filteredArray[0].image9
-        
         percent = filteredArray[0].percent
+        job = filteredArray[0].job
+        
     }
     
     func saveMe() {

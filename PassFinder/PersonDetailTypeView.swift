@@ -278,6 +278,20 @@ struct PersonDetailTypeView: View {
                 .frame(width: 340, height: 230)
                 .background(Color.passFinderDark).opacity(0.8)
                 .cornerRadius(10)
+                
+                // 직업
+                VStack {
+                    
+                    Text(passFinderModel.job)
+                        .foregroundColor(.white)
+                        .font(.system(size: 15, weight: .heavy))
+                        .padding()
+                    
+                } // vstack
+                .frame(width: 340, height: 80)
+                .background(Color.passFinderDark).opacity(0.8)
+                .cornerRadius(10)
+                .padding()
               
                 Spacer()
 
