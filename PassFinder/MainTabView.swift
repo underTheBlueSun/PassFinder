@@ -28,35 +28,35 @@ struct MainTabView: View {
             .tag(0)
             .tabItem {
               Image(systemName: "text.badge.checkmark")
-//              Text("검사")
+              Text("테스트")
              }
         
           MeDetailTypeView()
           .tag(1)
           .tabItem {
               Image(systemName: "brain.head.profile")
-  //            Text("나")
+              Text("나의유형")
           }
         
         PersonView()
         .tag(2)
           .tabItem {
               Image(systemName: "person.2.fill")
-//              Text("사람들")
+              Text("다른사람")
           }
         
         TypeView()
         .tag(3)
         .tabItem {
             Image(systemName: "16.circle.fill")
-    //        Text("유형들")
+            Text("16유형")
         }
         
         SetUpView()
         .tag(4)
         .tabItem {
             Image(systemName: "info.circle.fill")
-    //        Text("설정")
+            Text("정보")
             
         }
       
