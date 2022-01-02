@@ -57,15 +57,6 @@ class PassFinderViewModel: ObservableObject {
             // dictionary = key:value
             counts[result] = (counts[result] ?? 0) + 1
         }
-        
-//        var eCnt: Int = 0
-//        var iCnt: Int = 0
-//        var sCnt: Int = 0
-//        var nCnt: Int = 0
-//        var tCnt: Int = 0
-//        var fCnt: Int = 0
-//        var jCnt: Int = 0
-//        var pCnt: Int = 0
     
         for (key, value) in counts {
             if key == "E" {
@@ -156,7 +147,6 @@ class PassFinderViewModel: ObservableObject {
             self.isSaveMe = true
             
         } // else
-
         
     }
     
@@ -184,16 +174,6 @@ class PassFinderViewModel: ObservableObject {
         self.fCnt = person.fCnt
         self.jCnt = person.jCnt
         self.pCnt = person.pCnt
-            
-//        self.myType = self.persons[0].type
-//        self.eCnt = self.persons[0].eCnt
-//        self.iCnt = self.persons[0].iCnt
-//        self.sCnt = self.persons[0].sCnt
-//        self.nCnt = self.persons[0].nCnt
-//        self.tCnt = self.persons[0].tCnt
-//        self.fCnt = self.persons[0].fCnt
-//        self.jCnt = self.persons[0].jCnt
-//        self.pCnt = self.persons[0].pCnt
             
         self.filteredArray = types.filter { $0.type == self.myType }  // 나의 유형 객체
         self.title = self.filteredArray[0].title
@@ -231,7 +211,7 @@ class PassFinderViewModel: ObservableObject {
     }
     
     func saveMe() {
-
+        
         guard let dbRef = try? Realm() else { return }
         let results = dbRef.objects(Person.self).filter("isMe == true")
         self.persons = results.compactMap({ (person) -> Person? in return person })
@@ -274,7 +254,7 @@ class PassFinderViewModel: ObservableObject {
             }
             
         }
-        
+            
         self.name = ""
         self.eCnt = 0
         self.iCnt = 0
@@ -284,9 +264,7 @@ class PassFinderViewModel: ObservableObject {
         self.fCnt = 0
         self.jCnt = 0
         self.pCnt = 0
-        
         self.isSaveMe = true
-        
         
     } // saveMe
     
@@ -321,6 +299,32 @@ class PassFinderViewModel: ObservableObject {
         self.fCnt = 0
         self.jCnt = 0
         self.pCnt = 0
+        
+    } // saveOther
+    
+    func saveOtherDirect() {
+
+        guard let dbRef = try? Realm() else { return }
+        
+        let person = Person()
+//        person.uuid = uuid
+        person.name = self.name
+        person.type = self.myType
+        person.eCnt = 0
+        person.iCnt = 0
+        person.sCnt = 0
+        person.nCnt = 0
+        person.tCnt = 0
+        person.fCnt = 0
+        person.jCnt = 0
+        person.pCnt = 0
+        person.isMe = false
+        
+        try? dbRef.write {
+            dbRef.add(person)
+        }
+        
+        self.name = ""
         
     } // saveOther
     

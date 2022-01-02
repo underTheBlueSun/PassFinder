@@ -36,7 +36,8 @@ struct AddPersonView: View {
                 if typeSelections.count == 1 && passFinderModel.name != "" {
                 Button(action: {
                     passFinderModel.myType = typeSelections[0]
-                    passFinderModel.saveOther()
+//                    passFinderModel.saveOther()
+                    passFinderModel.saveOtherDirect()
 //                    passFinderModel.fetchOther()
                     presentaion.wrappedValue.dismiss()
                 }, label: {
